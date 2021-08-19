@@ -62,7 +62,6 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.FallingBlock;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -326,7 +325,7 @@ public class CollapsingDebrisBlock extends DimensionModModElements.ModElement {
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == Blocks.SAND.getDefaultState().getBlock())
+			if (blockAt.getBlock() == FrozenSandBlock.block.getDefaultState().getBlock())
 				blockCriteria = true;
 			return blockCriteria;
 		}

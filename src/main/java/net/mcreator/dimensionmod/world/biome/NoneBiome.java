@@ -32,6 +32,7 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.block.Blocks;
 
+import net.mcreator.dimensionmod.block.FrozenSandBlock;
 import net.mcreator.dimensionmod.DimensionModModElements;
 
 @DimensionModModElements.ModElement.Tag
@@ -48,8 +49,8 @@ public class NoneBiome extends DimensionModModElements.ModElement {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-6750208).setWaterColor(4159204).setWaterFogColor(329011)
 						.withSkyColor(-6750208).withFoliageColor(10387789).withGrassColor(9470285).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.SAND.getDefaultState(),
-								Blocks.SAND.getDefaultState(), Blocks.SAND.getDefaultState())));
+						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(FrozenSandBlock.block.getDefaultState(),
+								FrozenSandBlock.block.getDefaultState(), FrozenSandBlock.block.getDefaultState())));
 				biomeGenerationSettings.withStructure(StructureFeatures.DESERT_PYRAMID);
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.TREE

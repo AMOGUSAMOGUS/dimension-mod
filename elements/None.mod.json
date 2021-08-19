@@ -2,12 +2,12 @@
   "_fv": 18,
   "_type": "biome",
   "definition": {
-    "name": "None",
+    "name": "Collapsing Place",
     "groundBlock": {
-      "value": "Blocks.SAND#0"
+      "value": "CUSTOM:FrozenSand"
     },
     "undergroundBlock": {
-      "value": "Blocks.SAND#0"
+      "value": "CUSTOM:FrozenSand"
     },
     "airColor": {
       "value": -6750208,

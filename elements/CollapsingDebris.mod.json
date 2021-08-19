@@ -107,7 +107,7 @@
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.SAND#0"
+        "value": "CUSTOM:FrozenSand"
       }
     ],
     "frequencyPerChunks": 10,
