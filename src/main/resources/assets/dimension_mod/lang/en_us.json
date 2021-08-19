@@ -1,8 +1,12 @@
 {
   "block.dimension_mod.crying_netherrack": "Crying Netherrack",
   "biome.dimension_mod.crying_nether_wastes": "Crying Nether Wastes",
+  "item.dimension_mod.sandy_armor_helmet": "Sandy Helmet",
   "subtitles.crying-wastes-music": "",
   "biome.dimension_mod.none": "None",
+  "item.dimension_mod.sandy_armor_leggings": "Sandy Leggings",
   "item.dimension_mod.crying_nether": "Flint And dead cat",
-  "item.dimension_mod.collapsing_dimension": "Collapsing Dimension Portal Igniter"
+  "item.dimension_mod.sandy_armor_chestplate": "Sandy Body",
+  "item.dimension_mod.collapsing_dimension": "Collapsing Dimension Portal Igniter",
+  "item.dimension_mod.sandy_armor_boots": "Sandy Boots"
 }
