@@ -286,13 +286,13 @@
       "registry_name": "crying_nether_brick"
     },
     {
-      "name": "CryingNetherStructureTable",
-      "type": "loottable",
+      "name": "SpawnSmallSandyTemple",
+      "type": "structure",
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crying_nether_structure_table"
+      "registry_name": "spawn_small_sandy_temple"
     },
     {
       "name": "CryingBlazeSpawner",
@@ -302,6 +302,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "crying_blaze_spawner"
+    },
+    {
+      "name": "CryingNetherStructureTable",
+      "type": "loottable",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crying_nether_structure_table"
     },
     {
       "name": "CryingNetherCastle",
