@@ -284,6 +284,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "crying_nether_brick"
+    },
+    {
+      "name": "CryingNetherStructureTable",
+      "type": "loottable",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crying_nether_structure_table"
     }
   ],
   "variable_elements": [],
