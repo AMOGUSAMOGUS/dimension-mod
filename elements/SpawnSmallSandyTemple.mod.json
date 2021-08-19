@@ -27,9 +27,6 @@
       }
     ],
     "restrictionBiomes": [],
-    "ignoreBlocks": "STRUCTURE_BLOCK",
-    "generateCondition": {
-      "name": "SpawnSmallSandyTempleAdditionalGenerationCondition"
-    }
+    "ignoreBlocks": "STRUCTURE_BLOCK"
   }
 }
