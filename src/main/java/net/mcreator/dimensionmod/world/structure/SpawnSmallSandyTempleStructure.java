@@ -31,6 +31,7 @@ import net.minecraft.util.Mirror;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.dimensionmod.block.FrozenSandBlock;
 import net.mcreator.dimensionmod.DimensionModModElements;
 
 import java.util.Random;
@@ -70,6 +71,8 @@ public class SpawnSmallSandyTempleStructure extends DimensionModModElements.ModE
 							if (blockAt.getBlock() == Blocks.SANDSTONE.getDefaultState().getBlock())
 								blockCriteria = true;
 							if (blockAt.getBlock() == Blocks.SAND.getDefaultState().getBlock())
+								blockCriteria = true;
+							if (blockAt.getBlock() == FrozenSandBlock.block.getDefaultState().getBlock())
 								blockCriteria = true;
 							if (!blockCriteria)
 								continue;
