@@ -2,6 +2,7 @@
 package net.mcreator.dimensionmod.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.common.ToolType;
 
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
@@ -19,11 +20,11 @@ import java.util.List;
 import java.util.Collections;
 
 @DimensionModModElements.ModElement.Tag
-public class CryingNetherrackBlock extends DimensionModModElements.ModElement {
-	@ObjectHolder("dimension_mod:crying_netherrack")
+public class CryingNetherBrickBlock extends DimensionModModElements.ModElement {
+	@ObjectHolder("dimension_mod:crying_nether_brick")
 	public static final Block block = null;
-	public CryingNetherrackBlock(DimensionModModElements instance) {
-		super(instance, 1);
+	public CryingNetherBrickBlock(DimensionModModElements instance) {
+		super(instance, 26);
 	}
 
 	@Override
@@ -34,9 +35,9 @@ public class CryingNetherrackBlock extends DimensionModModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.NETHERRACK).hardnessAndResistance(0.5499999999999999f, 10f)
-					.setLightLevel(s -> 1).slipperiness(0.7f).speedFactor(0.95f));
-			setRegistryName("crying_netherrack");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1.2f, 10f).setLightLevel(s -> 1)
+					.harvestLevel(1).harvestTool(ToolType.PICKAXE).setRequiresTool().slipperiness(0.65f));
+			setRegistryName("crying_nether_brick");
 		}
 
 		@Override

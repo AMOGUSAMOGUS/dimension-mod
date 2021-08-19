@@ -32,7 +32,7 @@ public class SandyAxeItem extends DimensionModModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 2f;
+				return 9f;
 			}
 
 			public int getHarvestLevel() {

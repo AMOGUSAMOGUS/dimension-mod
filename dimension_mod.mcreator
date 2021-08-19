@@ -275,6 +275,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sandy_shovel_recipe"
+    },
+    {
+      "name": "CryingNetherBrick",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crying_nether_brick"
     }
   ],
   "variable_elements": [],
@@ -298,6 +307,7 @@
       "item.dimension_mod.sandy_pickaxe": "Sandy Pickaxe",
       "item.dimension_mod.collapsing_dimension": "Collapsing Dimension Portal Igniter",
       "item.dimension_mod.sandy_armor_boots": "Sandy Boots",
+      "block.dimension_mod.crying_nether_brick": "Crying Nether Brick",
       "block.dimension_mod.crying_netherrack": "Crying Netherrack",
       "biome.dimension_mod.crying_nether_wastes": "Crying Nether Wastes",
       "item.dimension_mod.sandy_armor_helmet": "Sandy Helmet",
