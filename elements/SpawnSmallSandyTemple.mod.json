@@ -21,6 +21,9 @@
       },
       {
         "value": "Blocks.SAND#0"
+      },
+      {
+        "value": "CUSTOM:FrozenSand"
       }
     ],
     "restrictionBiomes": [],

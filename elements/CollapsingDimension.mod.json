@@ -9,7 +9,7 @@
     ],
     "worldGenType": "Nether like gen",
     "mainFillerBlock": {
-      "value": "Blocks.SANDSTONE#0"
+      "value": "CUSTOM:FrozenSand"
     },
     "fluidBlock": {
       "value": "Blocks.CAVE_AIR"

@@ -54,6 +54,7 @@ import net.minecraft.block.AbstractBlock;
 
 import net.mcreator.dimensionmod.particle.CryingPortalParticle;
 import net.mcreator.dimensionmod.item.CollapsingDimensionItem;
+import net.mcreator.dimensionmod.block.FrozenSandBlock;
 import net.mcreator.dimensionmod.DimensionModModElements;
 
 import javax.annotation.Nullable;
@@ -85,10 +86,10 @@ public class CollapsingDimensionDimension extends DimensionModModElements.ModEle
 			try {
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CAVE, new ImmutableSet.Builder<Block>()
 						.addAll((Set<Block>) ObfuscationReflectionHelper.getPrivateValue(WorldCarver.class, WorldCarver.CAVE, "field_222718_j"))
-						.add(Blocks.SANDSTONE.getDefaultState().getBlock()).build(), "field_222718_j");
+						.add(FrozenSandBlock.block.getDefaultState().getBlock()).build(), "field_222718_j");
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CANYON, new ImmutableSet.Builder<Block>()
 						.addAll((Set<Block>) ObfuscationReflectionHelper.getPrivateValue(WorldCarver.class, WorldCarver.CANYON, "field_222718_j"))
-						.add(Blocks.SANDSTONE.getDefaultState().getBlock()).build(), "field_222718_j");
+						.add(FrozenSandBlock.block.getDefaultState().getBlock()).build(), "field_222718_j");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
