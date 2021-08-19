@@ -302,6 +302,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "crying_blaze_spawner"
+    },
+    {
+      "name": "CryingNetherCastle",
+      "type": "structure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crying_nether_castle"
     }
   ],
   "variable_elements": [],
