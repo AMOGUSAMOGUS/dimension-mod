@@ -293,6 +293,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "spawn_small_sandy_temple"
+    },
+    {
+      "name": "CryingBlazeSpawner",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crying_blaze_spawner"
+    },
+    {
+      "name": "CryingNetherStructureTable",
+      "type": "loottable",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crying_nether_structure_table"
+    },
+    {
+      "name": "CryingNetherCastle",
+      "type": "structure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crying_nether_castle"
     }
   ],
   "variable_elements": [],
@@ -325,6 +352,7 @@
       "item.dimension_mod.sandy_shovel": "Sandy Shovel",
       "item.dimension_mod.sandy_axe": "Sandy Axe",
       "item.dimension_mod.sandy_scrap": "Sandy Scrap",
+      "item.dimension_mod.crying_blaze_spawner": "Crying Blaze Spawner",
       "item.dimension_mod.crying_nether": "Flint And dead cat",
       "block.dimension_mod.collapsing_debris": "Sandy Debris"
     }

@@ -35,7 +35,7 @@ public class CryingNetherBrickBlock extends DimensionModModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1.2f, 10f).setLightLevel(s -> 1)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.NETHER_BRICK).hardnessAndResistance(1.2f, 10f).setLightLevel(s -> 1)
 					.harvestLevel(1).harvestTool(ToolType.PICKAXE).setRequiresTool().slipperiness(0.65f));
 			setRegistryName("crying_nether_brick");
 		}
