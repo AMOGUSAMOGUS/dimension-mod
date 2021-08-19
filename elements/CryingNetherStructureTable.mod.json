@@ -2,11 +2,11 @@
   "_fv": 18,
   "_type": "loottable",
   "definition": {
-    "type": "Generic",
+    "type": "Chest",
     "pools": [
       {
-        "minrolls": 1,
-        "maxrolls": 1,
+        "minrolls": 4,
+        "maxrolls": 7,
         "minbonusrolls": 1,
         "maxbonusrolls": 1,
         "hasbonusrolls": false,

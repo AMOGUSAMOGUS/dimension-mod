@@ -1,8 +1,11 @@
 {
-  "type": "minecraft:generic",
+  "type": "minecraft:chest",
   "pools": [
     {
-      "rolls": 1,
+      "rolls": {
+        "min": 4,
+        "max": 7
+      },
       "entries": [
         {
           "type": "minecraft:item",
