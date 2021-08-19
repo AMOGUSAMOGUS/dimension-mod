@@ -49,9 +49,9 @@
     },
     "settings": {
       "name": "dimension_mod:collapsing_dimension",
-      "bedrock_roof_position": -10,
-      "bedrock_floor_position": -10,
-      "sea_level": 0,
+      "bedrock_roof_position": 0,
+      "bedrock_floor_position": 0,
+      "sea_level": 32,
       "disable_mob_generation": true,
       "default_block": {
         "Name": "minecraft:sand"
@@ -61,29 +61,29 @@
       },
       "noise": {
         "density_factor": 0,
-        "density_offset": 0,
-        "simplex_surface_noise": true,
+        "density_offset": 0.019921875,
+        "simplex_surface_noise": false,
         "random_density_offset": false,
-        "island_noise_override": true,
+        "island_noise_override": false,
         "amplified": false,
-        "size_horizontal": 2,
-        "size_vertical": 1,
+        "size_horizontal": 1,
+        "size_vertical": 2,
         "height": 128,
         "sampling": {
-          "xz_scale": 2,
-          "y_scale": 1,
+          "xz_scale": 1,
+          "y_scale": 3,
           "xz_factor": 80,
-          "y_factor": 160
+          "y_factor": 60
         },
         "bottom_slide": {
-          "target": -30,
-          "size": 7,
-          "offset": 1
+          "target": 320,
+          "size": 4,
+          "offset": -1
         },
         "top_slide": {
-          "target": -3000,
-          "size": 64,
-          "offset": -46
+          "target": 120,
+          "size": 3,
+          "offset": 0
         }
       },
       "structures": {

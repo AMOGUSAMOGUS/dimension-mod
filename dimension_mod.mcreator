@@ -60,6 +60,111 @@
       "metadata": {
         "ep": true
       }
+    },
+    {
+      "name": "CollapsingDebris",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "collapsing_debris"
+    },
+    {
+      "name": "SandyScrap",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandy_scrap"
+    },
+    {
+      "name": "SandyScrapRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandy_scrap_recipe"
+    },
+    {
+      "name": "SandyIngot",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandy_ingot"
+    },
+    {
+      "name": "SandyIngotRecipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandy_ingot_recipe"
+    },
+    {
+      "name": "SandyArmor",
+      "type": "armor",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandy_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "SandyHelmetRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandy_helmet_recipe"
+    },
+    {
+      "name": "SandyBootsRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandy_boots_recipe"
+    },
+    {
+      "name": "SandyLEggingsRecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandy_l_eggings_recipe"
+    },
+    {
+      "name": "SandyChestplateRecipe",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandy_chestplate_recipe"
+    },
+    {
+      "name": "SandySword",
+      "type": "tool",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandy_sword"
     }
   ],
   "variable_elements": [],
@@ -75,12 +180,20 @@
   ],
   "language_map": {
     "en_us": {
-      "block.dimension_mod.crying_netherrack": "Crying Netherrack",
-      "biome.dimension_mod.crying_nether_wastes": "Crying Nether Wastes",
       "subtitles.crying-wastes-music": "",
       "biome.dimension_mod.none": "None",
+      "item.dimension_mod.sandy_armor_chestplate": "Sandy Body",
+      "item.dimension_mod.sandy_sword": "Sandy Sword",
+      "item.dimension_mod.collapsing_dimension": "Collapsing Dimension Portal Igniter",
+      "item.dimension_mod.sandy_armor_boots": "Sandy Boots",
+      "block.dimension_mod.crying_netherrack": "Crying Netherrack",
+      "biome.dimension_mod.crying_nether_wastes": "Crying Nether Wastes",
+      "item.dimension_mod.sandy_armor_helmet": "Sandy Helmet",
+      "item.dimension_mod.sandy_ingot": "Sandy Ingot",
+      "item.dimension_mod.sandy_armor_leggings": "Sandy Leggings",
+      "item.dimension_mod.sandy_scrap": "Sandy Scrap",
       "item.dimension_mod.crying_nether": "Flint And dead cat",
-      "item.dimension_mod.collapsing_dimension": "Collapsing Dimension Portal Igniter"
+      "block.dimension_mod.collapsing_debris": "Sandy Debris"
     }
   },
   "foldersRoot": {
