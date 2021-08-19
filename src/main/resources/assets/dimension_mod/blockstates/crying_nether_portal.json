@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "dimension_mod:block/crying_nether_portal_ew"
+    },
+    "axis=x": {
+      "model": "dimension_mod:block/crying_nether_portal_ns"
+    }
+  }
+}

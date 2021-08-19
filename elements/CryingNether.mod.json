@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "nether"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:CryingNetherrack"
+    },
+    "fluidBlock": {
+      "value": "Blocks.LAVA"
+    },
+    "airColor": {
+      "value": -65485,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "BED_EXPLODES",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "Blocks.CRYING_OBSIDIAN"
+    },
+    "portalParticles": {
+      "value": "CUSTOM:CryingPortal"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Flint And dead cat",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "igniter",
+    "portalTexture": "cryingnetherrack",
+    "enablePortal": true
+  }
+}

@@ -1,10 +1,44 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "CryingNetherrack",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crying_netherrack"
+    },
+    {
+      "name": "CryingPortal",
+      "type": "particle",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crying_portal"
+    },
+    {
+      "name": "CryingNether",
+      "type": "dimension",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crying_nether",
+      "metadata": {
+        "ep": true
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.dimension_mod.crying_netherrack": "Crying Netherrack",
+      "item.dimension_mod.crying_nether": "Flint And dead cat"
+    }
   },
   "foldersRoot": {
     "name": "~",
