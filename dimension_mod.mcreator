@@ -65,7 +65,7 @@
       "name": "CollapsingDebris",
       "type": "block",
       "sortid": 5,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "collapsing_debris"
@@ -74,7 +74,7 @@
       "name": "SandyScrap",
       "type": "item",
       "sortid": 6,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "sandy_scrap"
@@ -92,7 +92,7 @@
       "name": "SandyIngot",
       "type": "item",
       "sortid": 8,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "sandy_ingot"
@@ -179,7 +179,7 @@
       "name": "SandyPickaxe",
       "type": "tool",
       "sortid": 17,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "sandy_pickaxe"
@@ -188,7 +188,7 @@
       "name": "SandyAxe",
       "type": "tool",
       "sortid": 19,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "sandy_axe"
@@ -197,7 +197,7 @@
       "name": "SandyHoe",
       "type": "tool",
       "sortid": 20,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "sandy_hoe"

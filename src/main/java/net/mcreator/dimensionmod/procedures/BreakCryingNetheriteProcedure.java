@@ -1,11 +1,28 @@
 package net.mcreator.dimensionmod.procedures;
 
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.world.BlockEvent;
+import net.minecraftforge.common.MinecraftForge;
+
+import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.item.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.item.ItemEntity;
+import net.minecraft.entity.Entity;
+
+import net.mcreator.dimensionmod.block.CryingNetherrackBlock;
+import net.mcreator.dimensionmod.DimensionModModElements;
+import net.mcreator.dimensionmod.DimensionModMod;
+
+import java.util.Map;
+import java.util.HashMap;
+
 @DimensionModModElements.ModElement.Tag
 public class BreakCryingNetheriteProcedure extends DimensionModModElements.ModElement {
-
 	public BreakCryingNetheriteProcedure(DimensionModModElements instance) {
 		super(instance, 5);
-
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -30,12 +47,10 @@ public class BreakCryingNetheriteProcedure extends DimensionModModElements.ModEl
 				DimensionModMod.LOGGER.warn("Failed to load dependency world for procedure BreakCryingNetherite!");
 			return;
 		}
-
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == CryingNetherrackBlock.block.getDefaultState().getBlock())) {
 			if ((Math.random() < 0.1)) {
 				if (world instanceof World && !world.isRemote()) {
@@ -45,7 +60,6 @@ public class BreakCryingNetheriteProcedure extends DimensionModModElements.ModEl
 				}
 			}
 		}
-
 	}
 
 	@SubscribeEvent
@@ -65,5 +79,4 @@ public class BreakCryingNetheriteProcedure extends DimensionModModElements.ModEl
 		dependencies.put("event", event);
 		this.executeProcedure(dependencies);
 	}
-
 }

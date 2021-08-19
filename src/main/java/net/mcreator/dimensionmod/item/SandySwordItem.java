@@ -1,12 +1,21 @@
 
 package net.mcreator.dimensionmod.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+
+import net.mcreator.dimensionmod.DimensionModModElements;
+
 @DimensionModModElements.ModElement.Tag
 public class SandySwordItem extends DimensionModModElements.ModElement {
-
 	@ObjectHolder("dimension_mod:sandy_sword")
 	public static final Item block = null;
-
 	public SandySwordItem(DimensionModModElements instance) {
 		super(instance, 16);
 	}
@@ -38,8 +47,6 @@ public class SandySwordItem extends DimensionModModElements.ModElement {
 				return Ingredient.fromStacks(new ItemStack(SandyIngotItem.block, (int) (1)));
 			}
 		}, 3, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
-
 		}.setRegistryName("sandy_sword"));
 	}
-
 }
