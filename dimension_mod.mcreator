@@ -311,6 +311,44 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "crying_nether_castle"
+    },
+    {
+      "name": "FrozenSand",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frozen_sand"
+    },
+    {
+      "name": "FrozenSandMelt",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frozen_sand_melt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -343,6 +381,7 @@
       "item.dimension_mod.sandy_shovel": "Sandy Shovel",
       "item.dimension_mod.sandy_axe": "Sandy Axe",
       "item.dimension_mod.sandy_scrap": "Sandy Scrap",
+      "block.dimension_mod.frozen_sand": "Frozen Sand",
       "item.dimension_mod.crying_blaze_spawner": "Crying Blaze Spawner",
       "item.dimension_mod.crying_nether": "Flint And dead cat",
       "block.dimension_mod.collapsing_debris": "Sandy Debris"

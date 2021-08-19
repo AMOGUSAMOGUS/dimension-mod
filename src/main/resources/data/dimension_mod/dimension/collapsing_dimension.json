@@ -54,7 +54,7 @@
       "sea_level": 32,
       "disable_mob_generation": true,
       "default_block": {
-        "Name": "minecraft:sand"
+        "Name": "dimension_mod:frozen_sand"
       },
       "default_fluid": {
         "Name": "minecraft:cave_air"
