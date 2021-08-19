@@ -101,7 +101,19 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "FrozenSandMelt"
+    },
+    "onStartToDestroy": {
+      "name": "FrozenSandMelt"
+    },
     "onEntityCollides": {
+      "name": "FrozenSandMelt"
+    },
+    "onEntityWalksOn": {
+      "name": "FrozenSandMelt"
+    },
+    "onRedstoneOn": {
       "name": "FrozenSandMelt"
     },
     "spawnWorldTypes": [],

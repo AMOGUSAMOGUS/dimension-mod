@@ -2,7 +2,6 @@ package net.mcreator.dimensionmod.procedures;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.state.Property;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
@@ -45,15 +44,6 @@ public class FrozenSandMeltProcedure extends DimensionModModElements.ModElement 
 		{
 			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 			BlockState _bs = Blocks.SAND.getDefaultState();
-			BlockState _bso = world.getBlockState(_bp);
-			for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-				Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-				if (_property != null && _bs.get(_property) != null)
-					try {
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
-					} catch (Exception e) {
-					}
-			}
 			world.setBlockState(_bp, _bs, 3);
 		}
 	}
