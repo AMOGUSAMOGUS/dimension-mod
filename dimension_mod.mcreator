@@ -284,6 +284,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "crying_nether_brick"
+    },
+    {
+      "name": "SpawnSmallSandyTemple",
+      "type": "structure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_small_sandy_temple"
     }
   ],
   "variable_elements": [],
