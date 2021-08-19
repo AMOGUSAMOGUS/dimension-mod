@@ -31,9 +31,12 @@ import net.minecraft.util.Mirror;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.dimensionmod.procedures.SpawnSmallSandyTempleAdditionalGenerationConditionProcedure;
 import net.mcreator.dimensionmod.DimensionModModElements;
 
 import java.util.Random;
+
+import com.google.common.collect.ImmutableMap;
 
 @DimensionModModElements.ModElement.Tag
 public class SpawnSmallSandyTempleStructure extends DimensionModModElements.ModElement {
@@ -79,6 +82,9 @@ public class SpawnSmallSandyTempleStructure extends DimensionModModElements.ModE
 							int x = spawnTo.getX();
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
+							if (!SpawnSmallSandyTempleAdditionalGenerationConditionProcedure
+									.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
+								continue;
 							Template template = world.getWorld().getStructureTemplateManager()
 									.getTemplateDefaulted(new ResourceLocation("dimension_mod", "smallsandytemple"));
 							if (template == null)
