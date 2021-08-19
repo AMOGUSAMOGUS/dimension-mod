@@ -230,6 +230,51 @@
           }
         ]
       }
+    },
+    {
+      "name": "SandySwordRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandy_sword_recipe"
+    },
+    {
+      "name": "SandyPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandy_pickaxe_recipe"
+    },
+    {
+      "name": "SandyAxeRecipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandy_axe_recipe"
+    },
+    {
+      "name": "SandyHoeRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandy_hoe_recipe"
+    },
+    {
+      "name": "SandyShovelRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandy_shovel_recipe"
     }
   ],
   "variable_elements": [],
