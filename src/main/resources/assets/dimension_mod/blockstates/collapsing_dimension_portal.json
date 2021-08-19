@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "dimension_mod:block/collapsing_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "dimension_mod:block/collapsing_dimension_portal_ns"
+    }
+  }
+}

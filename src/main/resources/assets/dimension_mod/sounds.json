@@ -1,1 +1,11 @@
-{}
+{
+  "crying-wastes-music": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "dimension_mod:hbjgfsghj",
+        "stream": false
+      }
+    ]
+  }
+}

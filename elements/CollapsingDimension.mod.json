@@ -4,41 +4,29 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:CryingNetherWastes"
-      },
-      {
-        "value": "crimson_forest"
-      },
-      {
-        "value": "basalt_deltas"
-      },
-      {
-        "value": "warped_forest"
-      },
-      {
-        "value": "soul_sand_valley"
+        "value": "CUSTOM:None"
       }
     ],
-    "worldGenType": "Nether like gen",
+    "worldGenType": "End like gen",
     "mainFillerBlock": {
-      "value": "CUSTOM:CryingNetherrack"
+      "value": "Blocks.SAND#0"
     },
     "fluidBlock": {
-      "value": "Blocks.LAVA"
+      "value": "Blocks.CAVE_AIR"
     },
     "airColor": {
-      "value": -65485,
+      "value": -6750208,
       "falpha": 0.0
     },
     "canRespawnHere": false,
     "hasFog": false,
     "isDark": false,
-    "doesWaterVaporize": true,
-    "sleepResult": "BED_EXPLODES",
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
     "portalFrame": {
-      "value": "Blocks.CRYING_OBSIDIAN"
+      "value": "Blocks.SANDSTONE#0"
     },
     "portalParticles": {
       "value": "CUSTOM:CryingPortal"
@@ -47,12 +35,12 @@
     "portalSound": {
       "value": "block.portal.ambient"
     },
-    "igniterName": "Flint And dead cat",
+    "igniterName": "Collapsing Dimension Portal Igniter",
     "igniterTab": {
       "value": "TOOLS"
     },
     "texture": "igniter",
-    "portalTexture": "cryingnetherrack",
+    "portalTexture": "sand",
     "enablePortal": true
   }
 }

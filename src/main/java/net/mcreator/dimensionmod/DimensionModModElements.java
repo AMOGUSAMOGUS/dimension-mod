@@ -45,6 +45,8 @@ public class DimensionModModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public DimensionModModElements() {
+		sounds.put(new ResourceLocation("dimension_mod", "crying-wastes-music"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dimension_mod", "crying-wastes-music")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("dimension_mod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

@@ -30,14 +30,57 @@
       "metadata": {
         "ep": true
       }
+    },
+    {
+      "name": "CryingNetherWastes",
+      "type": "biome",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crying_nether_wastes"
+    },
+    {
+      "name": "None",
+      "type": "biome",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "none"
+    },
+    {
+      "name": "CollapsingDimension",
+      "type": "dimension",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "collapsing_dimension",
+      "metadata": {
+        "ep": true
+      }
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "crying-wastes-music",
+      "files": [
+        "hbjgfsghj"
+      ],
+      "category": "master",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
     "en_us": {
       "block.dimension_mod.crying_netherrack": "Crying Netherrack",
-      "item.dimension_mod.crying_nether": "Flint And dead cat"
+      "biome.dimension_mod.crying_nether_wastes": "Crying Nether Wastes",
+      "subtitles.crying-wastes-music": "",
+      "biome.dimension_mod.none": "None",
+      "item.dimension_mod.crying_nether": "Flint And dead cat",
+      "item.dimension_mod.collapsing_dimension": "Collapsing Dimension Portal Igniter"
     }
   },
   "foldersRoot": {

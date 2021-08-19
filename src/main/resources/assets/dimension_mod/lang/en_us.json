@@ -1,4 +1,8 @@
 {
   "block.dimension_mod.crying_netherrack": "Crying Netherrack",
-  "item.dimension_mod.crying_nether": "Flint And dead cat"
+  "biome.dimension_mod.crying_nether_wastes": "Crying Nether Wastes",
+  "subtitles.crying-wastes-music": "",
+  "biome.dimension_mod.none": "None",
+  "item.dimension_mod.crying_nether": "Flint And dead cat",
+  "item.dimension_mod.collapsing_dimension": "Collapsing Dimension Portal Igniter"
 }

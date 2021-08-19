@@ -34,7 +34,8 @@ public class CryingNetherrackBlock extends DimensionModModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.NETHERRACK).hardnessAndResistance(0.5499999999999999f, 10f)
+					.setLightLevel(s -> 0).slipperiness(0.7f).speedFactor(0.95f));
 			setRegistryName("crying_netherrack");
 		}
 

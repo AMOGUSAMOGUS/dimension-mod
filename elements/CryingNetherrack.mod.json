@@ -34,7 +34,7 @@
     ],
     "name": "Crying Netherrack",
     "specialInfo": [],
-    "hardness": 1.0,
+    "hardness": 0.5499999999999999,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -66,13 +66,13 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.6,
-    "speedFactor": 1.0,
+    "slipperiness": 0.7,
+    "speedFactor": 0.95,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "NETHERRACK"
     },
     "luminance": 0,
     "unbreakable": false,
