@@ -167,15 +167,6 @@
       "registry_name": "sandy_sword"
     },
     {
-      "name": "SandyPickaxe",
-      "type": "tool",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sandy_pickaxe"
-    },
-    {
       "name": "SandyShovel",
       "type": "tool",
       "sortid": 18,
@@ -183,6 +174,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sandy_shovel"
+    },
+    {
+      "name": "SandyPickaxe",
+      "type": "tool",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandy_pickaxe"
     },
     {
       "name": "SandyAxe",
@@ -201,6 +201,35 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sandy_hoe"
+    },
+    {
+      "name": "BreakCryingNetherite",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "break_crying_netherite",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

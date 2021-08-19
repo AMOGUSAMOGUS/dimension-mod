@@ -4,9 +4,9 @@
     "item": "minecraft:netherite_boots"
   },
   "addition": {
-    "item": "dimension_mod:sandy_ingot"
+    "item": "dimension_mod:deleted_mod_element"
   },
   "result": {
-    "item": "dimension_mod:sandy_armor_boots"
+    "item": "dimension_mod:deleted_mod_element_boots"
   }
 }
