@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_helmet"
+  },
+  "addition": {
+    "item": "dimension_mod:sandy_ingot"
+  },
+  "result": {
+    "item": "dimension_mod:deleted_mod_element_helmet"
+  }
+}
