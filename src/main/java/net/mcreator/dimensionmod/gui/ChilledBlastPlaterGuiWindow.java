@@ -5,12 +5,16 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
+
+import net.mcreator.dimensionmod.DimensionModMod;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
@@ -81,5 +85,11 @@ public class ChilledBlastPlaterGuiWindow extends ContainerScreen<ChilledBlastPla
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
+		this.addButton(new Button(this.guiLeft + 17, this.guiTop + 53, 50, 20, new StringTextComponent("Plate"), e -> {
+			if (true) {
+				DimensionModMod.PACKET_HANDLER.sendToServer(new ChilledBlastPlaterGui.ButtonPressedMessage(0, x, y, z));
+				ChilledBlastPlaterGui.handleButtonAction(entity, 0, x, y, z);
+			}
+		}));
 	}
 }

@@ -446,15 +446,6 @@
       "registry_name": "obsidian_string"
     },
     {
-      "name": "PlaceHolder",
-      "type": "item",
-      "sortid": 38,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "place_holder"
-    },
-    {
       "name": "BlazeSling",
       "type": "gun",
       "sortid": 38,
@@ -591,6 +582,68 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "blaze_plated_axe"
+    },
+    {
+      "name": "ChilledBlastPlaterUsed",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chilled_blast_plater_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SandWitherSpawn",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sand_wither_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -623,7 +676,6 @@
       "item.dimension_mod.obsidian_string": "Obsidian String",
       "block.dimension_mod.blaze_plating_machine": "Blaze Plating Machine",
       "item.dimension_mod.sandy_scrap": "Sandy Scrap",
-      "item.dimension_mod.place_holder": "Place Holder",
       "item.dimension_mod.blaze_plated_sword": "Blaze Plated Sword",
       "block.dimension_mod.collapsing_debris": "Sandy Debris",
       "item.dimension_mod.blaze_king_spawn_egg": "Blaze King Spawn Egg",

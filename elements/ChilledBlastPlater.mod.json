@@ -85,6 +85,20 @@
           "x": 188,
           "y": 68
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Plate",
+          "onClick": {
+            "name": "ChilledBlastPlaterUsed"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "Plate",
+          "x": 143,
+          "y": 90
+        }
       }
     ]
   }
