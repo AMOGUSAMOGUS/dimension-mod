@@ -390,13 +390,69 @@
       }
     },
     {
-      "name": "CryingBlaze",
-      "type": "mob",
-      "sortid": 32,
-      "compiles": false,
+      "name": "BlueBlazeRod",
+      "type": "item",
+      "sortid": 33,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crying_blaze"
+      "registry_name": "blue_blaze_rod"
+    },
+    {
+      "name": "BlazeKing",
+      "type": "mob",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blaze_king"
+    },
+    {
+      "name": "BlazeKingLoot",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blaze_king_loot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagmaSpider",
+      "type": "mob",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magma_spider"
+    },
+    {
+      "name": "ObsidianString",
+      "type": "item",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "obsidian_string"
     }
   ],
   "variable_elements": [],
@@ -412,29 +468,33 @@
   ],
   "language_map": {
     "en_us": {
-      "item.dimension_mod.crying_blaze_spawn_egg": "Crying Blaze Spawn Egg",
-      "subtitles.crying-wastes-music": "",
-      "biome.dimension_mod.none": "Collapsing Place",
+      "entity.dimension_mod.magma_spider": "Sprider",
       "item.dimension_mod.sandy_hoe": "Sandy Hoe",
-      "entity.dimension_mod.crying_blaze": "Crying Blaze",
-      "item.dimension_mod.sandy_armor_chestplate": "Sandy Body",
-      "item.dimension_mod.sandy_sword": "Sandy Sword",
-      "item.dimension_mod.sandy_pickaxe": "Sandy Pickaxe",
       "item.dimension_mod.collapsing_dimension": "Collapsing Dimension Portal Igniter",
       "item.dimension_mod.sandy_armor_boots": "Sandy Boots",
       "block.dimension_mod.crying_nether_brick": "Crying Nether Brick",
+      "entity.dimension_mod.blaze_king": "Blaze King",
       "block.dimension_mod.crying_netherrack": "Crying Netherrack",
+      "item.dimension_mod.sandy_shovel": "Sandy Shovel",
+      "item.dimension_mod.sandy_armor_leggings": "Sandy Leggings",
+      "item.dimension_mod.blue_blaze_rod": "Blue Blaze Rod",
+      "item.dimension_mod.obsidian_string": "Obsidian String",
+      "item.dimension_mod.sandy_scrap": "Sandy Scrap",
+      "item.dimension_mod.crying_blaze_spawner": "Crying Blaze Spawner",
+      "block.dimension_mod.collapsing_debris": "Sandy Debris",
+      "item.dimension_mod.blaze_king_spawn_egg": "Blaze King Spawn Egg",
+      "subtitles.crying-wastes-music": "",
+      "biome.dimension_mod.none": "Collapsing Place",
+      "item.dimension_mod.sandy_armor_chestplate": "Sandy Body",
+      "item.dimension_mod.sandy_sword": "Sandy Sword",
+      "item.dimension_mod.sandy_pickaxe": "Sandy Pickaxe",
       "biome.dimension_mod.crying_nether_wastes": "Crying Nether Wastes",
       "item.dimension_mod.sandy_armor_helmet": "Sandy Helmet",
-      "item.dimension_mod.sandy_ingot": "Sandy Ingot",
-      "item.dimension_mod.sandy_armor_leggings": "Sandy Leggings",
-      "item.dimension_mod.sandy_shovel": "Sandy Shovel",
       "item.dimension_mod.sandy_axe": "Sandy Axe",
-      "item.dimension_mod.sandy_scrap": "Sandy Scrap",
+      "item.dimension_mod.sandy_ingot": "Sandy Ingot",
       "block.dimension_mod.frozen_sand": "Frozen Sand",
-      "item.dimension_mod.crying_blaze_spawner": "Crying Blaze Spawner",
       "item.dimension_mod.crying_nether": "Flint And dead cat",
-      "block.dimension_mod.collapsing_debris": "Sandy Debris"
+      "item.dimension_mod.magma_spider_spawn_egg": "Sprider Spawn Egg"
     }
   },
   "foldersRoot": {

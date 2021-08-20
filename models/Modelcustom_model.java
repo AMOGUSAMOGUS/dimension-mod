@@ -1,158 +1,170 @@
+// Made with Blockbench 3.9.2
+// Exported for Minecraft version 1.15 - 1.16 with MCP mappings
+// Paste this class into your mod and generate all required imports
+
 public static class Modelcustom_model extends EntityModel<Entity> {
-	private final ModelRenderer head;
-	private final ModelRenderer stick1;
-	private final ModelRenderer stick1_reverse;
-	private final ModelRenderer head2;private final ModelRenderer 2 stick;private final ModelRenderer 3 stick;private final ModelRenderer 4 stick;private final ModelRenderer 5 stick;private final ModelRenderer 6 stick;private final ModelRenderer 7 stick;private final ModelRenderer 8 stick;private final ModelRenderer 9 stick;private final ModelRenderer 10 stick;private final ModelRenderer 11 stick;private final ModelRenderer 12 stick;
-	private final ModelRenderer stick2;
-	private final ModelRenderer stick3;
-	private final ModelRenderer stick4;
-	private final ModelRenderer stick5;
-	private final ModelRenderer stick6;
-	private final ModelRenderer stick7;
-	private final ModelRenderer stick8;
-	private final ModelRenderer stick9;
-	private final ModelRenderer stick10;
-	private final ModelRenderer stick11;
-	private final ModelRenderer stick12;
+	private final ModelRenderer Head;
+	private final ModelRenderer crown;
+	private final ModelRenderer Body;
+	private final ModelRenderer BlazeRod1;
+	private final ModelRenderer BlazeRod2;
+	private final ModelRenderer BlazeRod3;
+	private final ModelRenderer BlazeRod4;
+	private final ModelRenderer BlazeRod5;
+	private final ModelRenderer BlazeRod6;
+	private final ModelRenderer BlazeRod7;
+	private final ModelRenderer BlazeRod8;
+	private final ModelRenderer BlazeRod9;
+	private final ModelRenderer BlazeRod10;
+	private final ModelRenderer BlazeRod11;
+	private final ModelRenderer BlazeRod12;
+	private final ModelRenderer BlazeRod13;
+	private final ModelRenderer BlazeRod14;
+	private final ModelRenderer BlazeRod15;
+	private final ModelRenderer BlazeRod16;
+	private final ModelRenderer BlazeRod17;
+	private final ModelRenderer BlazeRod18;
+	private final ModelRenderer BlazeRod19;
+	private final ModelRenderer BlazeRod20;
+	private final ModelRenderer BlazeRod21;
 
 	public Modelcustom_model() {
 		textureWidth = 64;
-		textureHeight = 32;
+		textureHeight = 64;
 
-		head = new ModelRenderer(this);
-		head.setRotationPoint(0.0F, 24.0F, 0.0F);
-		
+		Head = new ModelRenderer(this);
+		Head.setRotationPoint(0.0F, 24.0F, 0.0F);
+		Head.setTextureOffset(14, 12).addBox(-3.0F, -24.0F, -3.0F, 6.0F, 6.0F, 6.0F, 0.0F, false);
 
-		stick1 = new ModelRenderer(this);
-		stick1.setRotationPoint(7.0F, -2.0F, -7.0F);
-		stick1.setTextureOffset(0, 16).addBox(-15.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, 0.0F, false);
+		crown = new ModelRenderer(this);
+		crown.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Head.addChild(crown);
+		crown.setTextureOffset(20, 9).addBox(-2.0F, -25.0F, -2.0F, 4.0F, 1.0F, 1.0F, 0.0F, false);
+		crown.setTextureOffset(20, 9).addBox(-2.0F, -25.0F, 1.0F, 4.0F, 1.0F, 1.0F, 0.0F, false);
+		crown.setTextureOffset(8, 18).addBox(1.0F, -25.0F, -1.0F, 1.0F, 1.0F, 2.0F, 0.0F, false);
+		crown.setTextureOffset(8, 18).addBox(-2.0F, -25.0F, -1.0F, 1.0F, 1.0F, 2.0F, 0.0F, false);
+		crown.setTextureOffset(16, 0).addBox(-2.0F, -26.0F, -2.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+		crown.setTextureOffset(16, 0).addBox(0.0F, -26.0F, -2.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+		crown.setTextureOffset(16, 0).addBox(1.0F, -26.0F, -1.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+		crown.setTextureOffset(16, 0).addBox(1.0F, -26.0F, 1.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+		crown.setTextureOffset(16, 0).addBox(-1.0F, -26.0F, 1.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+		crown.setTextureOffset(16, 0).addBox(-2.0F, -26.0F, 0.0F, 1.0F, 1.0F, 1.0F, 0.0F, false);
 
-		stick1_reverse = new ModelRenderer(this);
-		stick1_reverse.setRotationPoint(-7.0F, 26.0F, 7.0F);
-		stick1.addChild(stick1_reverse);
-		
+		Body = new ModelRenderer(this);
+		Body.setRotationPoint(0.0F, 24.0F, 0.0F);
+		Body.setTextureOffset(0, 0).addBox(-3.0F, -18.0F, -2.0F, 6.0F, 14.0F, 4.0F, 0.0F, false);
 
-		head2 = new ModelRenderer(this);
-		head2.setRotationPoint(0.0F, -24.0F, 0.0F);
-		stick1_reverse.addChild(head2);
-		head2.setTextureOffset(0, 0).addBox(-4.0F, -4.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.0F, false);
+		BlazeRod1 = new ModelRenderer(this);
+		BlazeRod1.setRotationPoint(0.0F, 24.0F, 0.0F);
+		BlazeRod1.setTextureOffset(36, 0).addBox(5.0F, -11.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		2stick = new ModelRenderer(this);
-		2stick.setRotationPoint(-7.0F, -26.0F, -7.0F);
-		stick1_reverse.addChild(2stick);
-		2stick.setTextureOffset(0, 16).addBox(13.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, 0.0F, false);
+		BlazeRod2 = new ModelRenderer(this);
+		BlazeRod2.setRotationPoint(0.0F, 24.0F, 0.0F);
+		BlazeRod2.setTextureOffset(36, 0).addBox(-7.0F, -11.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		3stick = new ModelRenderer(this);
-		3stick.setRotationPoint(-7.0F, -26.0F, 7.0F);
-		stick1_reverse.addChild(3stick);
-		3stick.setTextureOffset(0, 16).addBox(13.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, 0.0F, false);
+		BlazeRod3 = new ModelRenderer(this);
+		BlazeRod3.setRotationPoint(0.0F, 24.0F, 12.0F);
+		BlazeRod3.setTextureOffset(36, 0).addBox(5.0F, -11.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		4stick = new ModelRenderer(this);
-		4stick.setRotationPoint(7.0F, -26.0F, 7.0F);
-		stick1_reverse.addChild(4stick);
-		4stick.setTextureOffset(0, 16).addBox(-15.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, 0.0F, false);
+		BlazeRod4 = new ModelRenderer(this);
+		BlazeRod4.setRotationPoint(-12.0F, 24.0F, 12.0F);
+		BlazeRod4.setTextureOffset(36, 0).addBox(5.0F, -11.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		5stick = new ModelRenderer(this);
-		5stick.setRotationPoint(5.0F, -22.0F, -5.0F);
-		stick1_reverse.addChild(5stick);
-		5stick.setTextureOffset(0, 16).addBox(-11.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, 0.0F, false);
+		BlazeRod5 = new ModelRenderer(this);
+		BlazeRod5.setRotationPoint(3.0F, 22.0F, -2.0F);
+		BlazeRod5.setTextureOffset(36, 0).addBox(-7.0F, -14.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		6stick = new ModelRenderer(this);
-		6stick.setRotationPoint(-5.0F, -22.0F, -5.0F);
-		stick1_reverse.addChild(6stick);
-		6stick.setTextureOffset(0, 16).addBox(9.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, 0.0F, false);
+		BlazeRod6 = new ModelRenderer(this);
+		BlazeRod6.setRotationPoint(9.0F, 22.0F, -2.0F);
+		BlazeRod6.setTextureOffset(36, 0).addBox(-7.0F, -14.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		7stick = new ModelRenderer(this);
-		7stick.setRotationPoint(-5.0F, -22.0F, 5.0F);
-		stick1_reverse.addChild(7stick);
-		7stick.setTextureOffset(0, 16).addBox(9.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, 0.0F, false);
+		BlazeRod7 = new ModelRenderer(this);
+		BlazeRod7.setRotationPoint(14.0F, 22.0F, 3.0F);
+		BlazeRod7.setTextureOffset(36, 0).addBox(-7.0F, -14.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		8stick = new ModelRenderer(this);
-		8stick.setRotationPoint(5.0F, -22.0F, 5.0F);
-		stick1_reverse.addChild(8stick);
-		8stick.setTextureOffset(0, 16).addBox(-11.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, 0.0F, false);
+		BlazeRod8 = new ModelRenderer(this);
+		BlazeRod8.setRotationPoint(14.0F, 22.0F, 9.0F);
+		BlazeRod8.setTextureOffset(36, 0).addBox(-7.0F, -14.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		9stick = new ModelRenderer(this);
-		9stick.setRotationPoint(3.0F, -14.0F, -3.0F);
-		stick1_reverse.addChild(9stick);
-		9stick.setTextureOffset(0, 16).addBox(-7.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, 0.0F, false);
+		BlazeRod9 = new ModelRenderer(this);
+		BlazeRod9.setRotationPoint(9.0F, 22.0F, 14.0F);
+		BlazeRod9.setTextureOffset(36, 0).addBox(-7.0F, -14.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		10stick = new ModelRenderer(this);
-		10stick.setRotationPoint(-3.0F, -14.0F, -3.0F);
-		stick1_reverse.addChild(10stick);
-		10stick.setTextureOffset(0, 16).addBox(5.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, 0.0F, false);
+		BlazeRod10 = new ModelRenderer(this);
+		BlazeRod10.setRotationPoint(3.0F, 22.0F, 14.0F);
+		BlazeRod10.setTextureOffset(36, 0).addBox(-7.0F, -14.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		11stick = new ModelRenderer(this);
-		11stick.setRotationPoint(-3.0F, -14.0F, 3.0F);
-		stick1_reverse.addChild(11stick);
-		11stick.setTextureOffset(0, 16).addBox(5.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, 0.0F, false);
+		BlazeRod11 = new ModelRenderer(this);
+		BlazeRod11.setRotationPoint(-2.0F, 22.0F, 9.0F);
+		BlazeRod11.setTextureOffset(36, 0).addBox(-7.0F, -14.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		12stick = new ModelRenderer(this);
-		12stick.setRotationPoint(3.0F, -14.0F, 3.0F);
-		stick1_reverse.addChild(12stick);
-		12stick.setTextureOffset(0, 16).addBox(-7.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, 0.0F, false);
+		BlazeRod12 = new ModelRenderer(this);
+		BlazeRod12.setRotationPoint(-2.0F, 22.0F, 3.0F);
+		BlazeRod12.setTextureOffset(36, 0).addBox(-7.0F, -14.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		stick2 = new ModelRenderer(this);
-		stick2.setRotationPoint(0.0F, 24.0F, 0.0F);
-		
+		BlazeRod13 = new ModelRenderer(this);
+		BlazeRod13.setRotationPoint(0.0F, 12.0F, 1.0F);
+		BlazeRod13.setTextureOffset(36, 0).addBox(-7.0F, -14.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		stick3 = new ModelRenderer(this);
-		stick3.setRotationPoint(0.0F, 24.0F, 0.0F);
-		
+		BlazeRod14 = new ModelRenderer(this);
+		BlazeRod14.setRotationPoint(12.0F, 12.0F, 0.0F);
+		BlazeRod14.setTextureOffset(36, 0).addBox(-7.0F, -14.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		stick4 = new ModelRenderer(this);
-		stick4.setRotationPoint(0.0F, 24.0F, 0.0F);
-		
+		BlazeRod15 = new ModelRenderer(this);
+		BlazeRod15.setRotationPoint(0.0F, 14.0F, 6.0F);
+		BlazeRod15.setTextureOffset(36, 0).addBox(-7.0F, -15.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		stick5 = new ModelRenderer(this);
-		stick5.setRotationPoint(0.0F, 24.0F, 0.0F);
-		
+		BlazeRod16 = new ModelRenderer(this);
+		BlazeRod16.setRotationPoint(12.0F, 13.0F, 6.0F);
+		BlazeRod16.setTextureOffset(36, 0).addBox(-7.0F, -14.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		stick6 = new ModelRenderer(this);
-		stick6.setRotationPoint(0.0F, 24.0F, 0.0F);
-		
+		BlazeRod17 = new ModelRenderer(this);
+		BlazeRod17.setRotationPoint(11.0F, 11.0F, 11.0F);
+		BlazeRod17.setTextureOffset(36, 0).addBox(-7.0F, -14.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		stick7 = new ModelRenderer(this);
-		stick7.setRotationPoint(0.0F, 24.0F, 0.0F);
-		
+		BlazeRod18 = new ModelRenderer(this);
+		BlazeRod18.setRotationPoint(1.0F, 11.0F, 11.0F);
+		BlazeRod18.setTextureOffset(36, 0).addBox(-7.0F, -14.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		stick8 = new ModelRenderer(this);
-		stick8.setRotationPoint(0.0F, 24.0F, 0.0F);
-		
+		BlazeRod19 = new ModelRenderer(this);
+		BlazeRod19.setRotationPoint(6.0F, 15.0F, 12.0F);
+		BlazeRod19.setTextureOffset(36, 0).addBox(-7.0F, -14.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		stick9 = new ModelRenderer(this);
-		stick9.setRotationPoint(0.0F, 24.0F, 0.0F);
-		
+		BlazeRod20 = new ModelRenderer(this);
+		BlazeRod20.setRotationPoint(12.0F, 9.0F, 0.0F);
+		BlazeRod20.setTextureOffset(36, 0).addBox(-16.0F, -15.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
-		stick10 = new ModelRenderer(this);
-		stick10.setRotationPoint(0.0F, 24.0F, 0.0F);
-		
-
-		stick11 = new ModelRenderer(this);
-		stick11.setRotationPoint(0.0F, 24.0F, 0.0F);
-		
-
-		stick12 = new ModelRenderer(this);
-		stick12.setRotationPoint(0.0F, 24.0F, 0.0F);
-		
+		BlazeRod21 = new ModelRenderer(this);
+		BlazeRod21.setRotationPoint(12.0F, 9.0F, 0.0F);
+		BlazeRod21.setTextureOffset(36, 0).addBox(-10.0F, -15.0F, -7.0F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 	}
 
 	@Override
 	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red,
 			float green, float blue, float alpha) {
-		head.render(matrixStack, buffer, packedLight, packedOverlay);
-		stick1.render(matrixStack, buffer, packedLight, packedOverlay);
-		stick2.render(matrixStack, buffer, packedLight, packedOverlay);
-		stick3.render(matrixStack, buffer, packedLight, packedOverlay);
-		stick4.render(matrixStack, buffer, packedLight, packedOverlay);
-		stick5.render(matrixStack, buffer, packedLight, packedOverlay);
-		stick6.render(matrixStack, buffer, packedLight, packedOverlay);
-		stick7.render(matrixStack, buffer, packedLight, packedOverlay);
-		stick8.render(matrixStack, buffer, packedLight, packedOverlay);
-		stick9.render(matrixStack, buffer, packedLight, packedOverlay);
-		stick10.render(matrixStack, buffer, packedLight, packedOverlay);
-		stick11.render(matrixStack, buffer, packedLight, packedOverlay);
-		stick12.render(matrixStack, buffer, packedLight, packedOverlay);
+		Head.render(matrixStack, buffer, packedLight, packedOverlay);
+		Body.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod1.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod2.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod3.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod4.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod5.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod6.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod7.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod8.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod9.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod10.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod11.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod12.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod13.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod14.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod15.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod16.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod17.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod18.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod19.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod20.render(matrixStack, buffer, packedLight, packedOverlay);
+		BlazeRod21.render(matrixStack, buffer, packedLight, packedOverlay);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
@@ -163,5 +175,7 @@ public static class Modelcustom_model extends EntityModel<Entity> {
 
 	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity e) {
 		super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
+		this.Head.rotateAngleY = f3 / (180F / (float) Math.PI);
+		this.Head.rotateAngleX = f4 / (180F / (float) Math.PI);
 	}
 }

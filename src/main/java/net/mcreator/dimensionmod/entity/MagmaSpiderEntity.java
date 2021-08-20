@@ -18,6 +18,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.monster.MonsterEntity;
@@ -34,17 +35,18 @@ import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
 
-import net.mcreator.dimensionmod.entity.renderer.CryingBlazeRenderer;
+import net.mcreator.dimensionmod.item.ObsidianStringItem;
+import net.mcreator.dimensionmod.entity.renderer.MagmaSpiderRenderer;
 import net.mcreator.dimensionmod.DimensionModModElements;
 
 @DimensionModModElements.ModElement.Tag
-public class CryingBlazeEntity extends DimensionModModElements.ModElement {
+public class MagmaSpiderEntity extends DimensionModModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.6f, 1.8f)).build("crying_blaze").setRegistryName("crying_blaze");
-	public CryingBlazeEntity(DimensionModModElements instance) {
-		super(instance, 32);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new CryingBlazeRenderer.ModelRegisterHandler());
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
+			.size(1.4f, 0.9f)).build("magma_spider").setRegistryName("magma_spider");
+	public MagmaSpiderEntity(DimensionModModElements instance) {
+		super(instance, 36);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new MagmaSpiderRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 	}
@@ -52,13 +54,22 @@ public class CryingBlazeEntity extends DimensionModModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items
-				.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("crying_blaze_spawn_egg"));
+		elements.items.add(() -> new SpawnEggItem(entity, -3407872, -10092544, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("magma_spider_spawn_egg"));
 	}
 
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 20, 4, 4));
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("basalt_deltas").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("soul_sand_valley").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("dimension_mod:crying_nether_wastes").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
+		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 1000, 1, 2));
 	}
 
 	@Override
@@ -107,6 +118,11 @@ public class CryingBlazeEntity extends DimensionModModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
+		}
+
+		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
+			super.dropSpecialItems(source, looting, recentlyHitIn);
+			this.entityDropItem(new ItemStack(ObsidianStringItem.block, (int) (1)));
 		}
 
 		@Override

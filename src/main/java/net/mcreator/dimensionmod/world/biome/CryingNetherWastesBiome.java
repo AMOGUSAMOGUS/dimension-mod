@@ -16,9 +16,11 @@ import net.minecraft.world.biome.BiomeGenerationSettings;
 import net.minecraft.world.biome.BiomeAmbience;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.entity.EntityClassification;
 import net.minecraft.client.audio.BackgroundMusicSelector;
 
 import net.mcreator.dimensionmod.particle.CryingPortalParticle;
+import net.mcreator.dimensionmod.entity.MagmaSpiderEntity;
 import net.mcreator.dimensionmod.block.CryingNetherrackBlock;
 import net.mcreator.dimensionmod.DimensionModModElements;
 
@@ -45,6 +47,7 @@ public class CryingNetherWastesBiome extends DimensionModModElements.ModElement 
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
+				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(MagmaSpiderEntity.entity, 20, 4, 4));
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.NETHER).depth(0.1f).scale(0.2f)
 						.temperature(0.5f).downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
