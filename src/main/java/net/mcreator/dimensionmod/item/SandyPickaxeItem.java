@@ -28,11 +28,11 @@ public class SandyPickaxeItem extends DimensionModModElements.ModElement {
 			}
 
 			public float getEfficiency() {
-				return 4f;
+				return 12f;
 			}
 
 			public float getAttackDamage() {
-				return 2f;
+				return 5f;
 			}
 
 			public int getHarvestLevel() {

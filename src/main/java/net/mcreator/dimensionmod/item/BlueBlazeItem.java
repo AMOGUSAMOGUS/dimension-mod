@@ -19,17 +19,17 @@ import net.minecraft.entity.Entity;
 import net.mcreator.dimensionmod.DimensionModModElements;
 
 @DimensionModModElements.ModElement.Tag
-public class SandyArmorItem extends DimensionModModElements.ModElement {
-	@ObjectHolder("dimension_mod:sandy_armor_helmet")
+public class BlueBlazeItem extends DimensionModModElements.ModElement {
+	@ObjectHolder("dimension_mod:blue_blaze_helmet")
 	public static final Item helmet = null;
-	@ObjectHolder("dimension_mod:sandy_armor_chestplate")
+	@ObjectHolder("dimension_mod:blue_blaze_chestplate")
 	public static final Item body = null;
-	@ObjectHolder("dimension_mod:sandy_armor_leggings")
+	@ObjectHolder("dimension_mod:blue_blaze_leggings")
 	public static final Item legs = null;
-	@ObjectHolder("dimension_mod:sandy_armor_boots")
+	@ObjectHolder("dimension_mod:blue_blaze_boots")
 	public static final Item boots = null;
-	public SandyArmorItem(DimensionModModElements instance) {
-		super(instance, 10);
+	public BlueBlazeItem(DimensionModModElements instance) {
+		super(instance, 47);
 	}
 
 	@Override
@@ -37,34 +37,33 @@ public class SandyArmorItem extends DimensionModModElements.ModElement {
 		IArmorMaterial armormaterial = new IArmorMaterial() {
 			@Override
 			public int getDurability(EquipmentSlotType slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 33;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 42;
 			}
 
 			@Override
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{4, 7, 9, 4}[slot.getIndex()];
+				return new int[]{5, 8, 10, 5}[slot.getIndex()];
 			}
 
 			@Override
 			public int getEnchantability() {
-				return 9;
+				return 20;
 			}
 
 			@Override
 			public net.minecraft.util.SoundEvent getSoundEvent() {
-				return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-						.getValue(new ResourceLocation("dimension_mod:crying-wastes-music"));
+				return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
 			}
 
 			@Override
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(SandyIngotItem.block, (int) (1)));
+				return Ingredient.EMPTY;
 			}
 
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public String getName() {
-				return "sandy_armor";
+				return "blue_blaze";
 			}
 
 			@Override
@@ -74,32 +73,32 @@ public class SandyArmorItem extends DimensionModModElements.ModElement {
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0f;
+				return 0.3f;
 			}
 		};
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "dimension_mod:textures/models/armor/sandy__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "dimension_mod:textures/models/armor/netherite__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("sandy_armor_helmet"));
+		}.setRegistryName("blue_blaze_helmet"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "dimension_mod:textures/models/armor/sandy__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "dimension_mod:textures/models/armor/netherite__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("sandy_armor_chestplate"));
+		}.setRegistryName("blue_blaze_chestplate"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "dimension_mod:textures/models/armor/sandy__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "dimension_mod:textures/models/armor/netherite__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("sandy_armor_leggings"));
+		}.setRegistryName("blue_blaze_leggings"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "dimension_mod:textures/models/armor/sandy__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "dimension_mod:textures/models/armor/netherite__layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("sandy_armor_boots"));
+		}.setRegistryName("blue_blaze_boots"));
 	}
 }

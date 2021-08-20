@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "dimension_mod:block/blaze_plating_machine"
+    },
+    "facing=east": {
+      "model": "dimension_mod:block/blaze_plating_machine",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "dimension_mod:block/blaze_plating_machine",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dimension_mod:block/blaze_plating_machine",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "dimension_mod:block/blaze_plating_machine",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "dimension_mod:block/blaze_plating_machine",
+      "x": 90
+    }
+  }
+}

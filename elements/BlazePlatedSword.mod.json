@@ -3,9 +3,9 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "netherite_sword",
+    "texture": "blazesword",
     "customModelName": "Normal",
-    "name": "Sandy Sword",
+    "name": "Blaze Plated Sword",
     "specialInfo": [],
     "creativeTab": {
       "value": "COMBAT"
@@ -14,16 +14,12 @@
     "harvestLevel": 1,
     "efficiency": 4.0,
     "attackSpeed": 1.6,
-    "enchantability": 5,
-    "damageVsEntity": 9.0,
-    "usageCount": 1800,
+    "enchantability": 2,
+    "damageVsEntity": 10.0,
+    "usageCount": 3000,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [
-      {
-        "value": "CUSTOM:SandyIngot"
-      }
-    ],
+    "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false

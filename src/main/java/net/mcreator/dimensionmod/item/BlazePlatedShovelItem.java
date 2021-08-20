@@ -4,8 +4,7 @@ package net.mcreator.dimensionmod.item;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.ShovelItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
@@ -13,40 +12,40 @@ import net.minecraft.item.IItemTier;
 import net.mcreator.dimensionmod.DimensionModModElements;
 
 @DimensionModModElements.ModElement.Tag
-public class SandySwordItem extends DimensionModModElements.ModElement {
-	@ObjectHolder("dimension_mod:sandy_sword")
+public class BlazePlatedShovelItem extends DimensionModModElements.ModElement {
+	@ObjectHolder("dimension_mod:blaze_plated_shovel")
 	public static final Item block = null;
-	public SandySwordItem(DimensionModModElements instance) {
-		super(instance, 16);
+	public BlazePlatedShovelItem(DimensionModModElements instance) {
+		super(instance, 50);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new SwordItem(new IItemTier() {
+		elements.items.add(() -> new ShovelItem(new IItemTier() {
 			public int getMaxUses() {
-				return 1800;
+				return 3000;
 			}
 
 			public float getEfficiency() {
-				return 4f;
+				return 14f;
 			}
 
 			public float getAttackDamage() {
-				return 7f;
+				return 5f;
 			}
 
 			public int getHarvestLevel() {
-				return 1;
+				return 6;
 			}
 
 			public int getEnchantability() {
-				return 5;
+				return 20;
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(SandyIngotItem.block, (int) (1)));
+				return Ingredient.EMPTY;
 			}
-		}, 3, -2.4f, new Item.Properties().group(ItemGroup.COMBAT)) {
-		}.setRegistryName("sandy_sword"));
+		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}.setRegistryName("blaze_plated_shovel"));
 	}
 }

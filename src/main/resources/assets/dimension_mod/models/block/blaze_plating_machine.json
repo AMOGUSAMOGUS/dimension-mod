@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dimension_mod:blocks/blast_furnace_top",
+    "up": "dimension_mod:blocks/blast_furnace_top",
+    "north": "dimension_mod:blocks/chilled_blast_plater",
+    "east": "dimension_mod:blocks/blast_furnace_side",
+    "south": "dimension_mod:blocks/blast_furnace_side",
+    "west": "dimension_mod:blocks/blast_furnace_side",
+    "particle": "dimension_mod:blocks/blast_furnace_top"
+  }
+}

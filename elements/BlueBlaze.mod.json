@@ -3,21 +3,21 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "netherite_helmet",
+    "textureHelmet": "b_helmet",
     "enableBody": true,
-    "textureBody": "sandy_chestplate",
+    "textureBody": "netherite_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "sandygings",
+    "textureLeggings": "netherite_leggings",
     "enableBoots": true,
-    "textureBoots": "sandy_boots",
+    "textureBoots": "netherite_boots",
     "creativeTab": {
       "value": "COMBAT"
     },
-    "armorTextureFile": "sandy_",
-    "helmetName": "Sandy Helmet",
-    "bodyName": "Sandy Body",
-    "leggingsName": "Sandy Leggings",
-    "bootsName": "Sandy Boots",
+    "armorTextureFile": "netherite_",
+    "helmetName": "Blue Blaze Plated Helmet",
+    "bodyName": "Blue Blaze Plated Body",
+    "leggingsName": "Blue Blaze Plated Leggings",
+    "bootsName": "Blue Blaze Plated Boots",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],
@@ -38,21 +38,17 @@
     "bootsModelPartL": "Boots L",
     "bootsModelPartR": "Boots R",
     "bootsModelTexture": "From armor",
-    "maxDamage": 33,
-    "damageValueHelmet": 4,
-    "damageValueBody": 9,
-    "damageValueLeggings": 7,
-    "damageValueBoots": 4,
-    "enchantability": 9,
+    "maxDamage": 42,
+    "damageValueHelmet": 5,
+    "damageValueBody": 10,
+    "damageValueLeggings": 8,
+    "damageValueBoots": 5,
+    "enchantability": 20,
     "toughness": 0.0,
-    "knockbackResistance": 0.0,
+    "knockbackResistance": 0.3,
     "equipSound": {
-      "value": "CUSTOM:crying-wastes-music"
+      "value": ""
     },
-    "repairItems": [
-      {
-        "value": "CUSTOM:SandyIngot"
-      }
-    ]
+    "repairItems": []
   }
 }
