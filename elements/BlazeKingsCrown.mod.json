@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "blaze_crown",
     "customModelName": "Normal",
-    "name": "Crying Blaze Spawner",
+    "name": "Blaze King's Crown",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"
@@ -28,6 +28,9 @@
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64
+    "inventoryStackSize": 64,
+    "onRightClickedOnBlock": {
+      "name": "SummonBlazeKing"
+    }
   }
 }

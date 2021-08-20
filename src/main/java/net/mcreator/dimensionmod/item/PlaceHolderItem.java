@@ -12,11 +12,11 @@ import net.minecraft.block.BlockState;
 import net.mcreator.dimensionmod.DimensionModModElements;
 
 @DimensionModModElements.ModElement.Tag
-public class CryingBlazeSpawnerItem extends DimensionModModElements.ModElement {
-	@ObjectHolder("dimension_mod:crying_blaze_spawner")
+public class PlaceHolderItem extends DimensionModModElements.ModElement {
+	@ObjectHolder("dimension_mod:place_holder")
 	public static final Item block = null;
-	public CryingBlazeSpawnerItem(DimensionModModElements instance) {
-		super(instance, 28);
+	public PlaceHolderItem(DimensionModModElements instance) {
+		super(instance, 38);
 	}
 
 	@Override
@@ -26,7 +26,7 @@ public class CryingBlazeSpawnerItem extends DimensionModModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("crying_blaze_spawner");
+			setRegistryName("place_holder");
 		}
 
 		@Override

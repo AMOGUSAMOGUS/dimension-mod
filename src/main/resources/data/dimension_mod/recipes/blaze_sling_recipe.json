@@ -1,0 +1,30 @@
+{
+  "group": "dimension_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "dimension_mod:blue_blaze_rod"
+    },
+    "1": {
+      "item": "dimension_mod:obsidian_string"
+    },
+    "2": {
+      "item": "dimension_mod:blue_blaze_rod"
+    },
+    "4": {
+      "item": "dimension_mod:blue_blaze_rod"
+    },
+    "7": {
+      "item": "dimension_mod:blue_blaze_rod"
+    }
+  },
+  "result": {
+    "item": "dimension_mod:blaze_sling",
+    "count": 1
+  }
+}
