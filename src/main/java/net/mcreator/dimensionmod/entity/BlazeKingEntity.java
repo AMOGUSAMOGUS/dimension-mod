@@ -12,17 +12,23 @@ import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraft.world.server.ServerBossInfo;
 import net.minecraft.world.World;
 import net.minecraft.world.BossInfo;
+import net.minecraft.util.math.vector.Vector3d;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
+import net.minecraft.pathfinding.FlyingPathNavigator;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.RangedAttackGoal;
+import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
+import net.minecraft.entity.ai.controller.FlyingMovementController;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
@@ -32,12 +38,14 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.block.BlockState;
 
 import net.mcreator.dimensionmod.procedures.BlazeKingLootProcedure;
 import net.mcreator.dimensionmod.item.BlazeSlingItem;
 import net.mcreator.dimensionmod.entity.renderer.BlazeKingRenderer;
 import net.mcreator.dimensionmod.DimensionModModElements;
 
+import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -71,6 +79,7 @@ public class BlazeKingEntity extends DimensionModModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
 			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 2);
+			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 0.3);
 			event.put(entity, ammma.create());
 		}
 	}
@@ -85,6 +94,8 @@ public class BlazeKingEntity extends DimensionModModElements.ModElement {
 			experienceValue = 0;
 			setNoAI(false);
 			enablePersistence();
+			this.moveController = new FlyingMovementController(this, 10, true);
+			this.navigator = new FlyingPathNavigator(this, this.world);
 		}
 
 		@Override
@@ -95,8 +106,18 @@ public class BlazeKingEntity extends DimensionModModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, BlazeKingEntity.CustomEntity.class, false, false));
-			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
+			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
+			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8, 20) {
+				@Override
+				protected Vector3d getPosition() {
+					Random random = CustomEntity.this.getRNG();
+					double dir_x = CustomEntity.this.getPosX() + ((random.nextFloat() * 2 - 1) * 16);
+					double dir_y = CustomEntity.this.getPosY() + ((random.nextFloat() * 2 - 1) * 16);
+					double dir_z = CustomEntity.this.getPosZ() + ((random.nextFloat() * 2 - 1) * 16);
+					return new Vector3d(dir_x, dir_y, dir_z);
+				}
+			});
+			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
 				@Override
 				public boolean shouldContinueExecuting() {
@@ -128,6 +149,11 @@ public class BlazeKingEntity extends DimensionModModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.blaze.death"));
+		}
+
+		@Override
+		public boolean onLivingFall(float l, float d) {
+			return false;
 		}
 
 		@Override
@@ -173,6 +199,20 @@ public class BlazeKingEntity extends DimensionModModElements.ModElement {
 		public void updateAITasks() {
 			super.updateAITasks();
 			this.bossInfo.setPercent(this.getHealth() / this.getMaxHealth());
+		}
+
+		@Override
+		protected void updateFallState(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
+		}
+
+		@Override
+		public void setNoGravity(boolean ignored) {
+			super.setNoGravity(true);
+		}
+
+		public void livingTick() {
+			super.livingTick();
+			this.setNoGravity(true);
 		}
 	}
 }
