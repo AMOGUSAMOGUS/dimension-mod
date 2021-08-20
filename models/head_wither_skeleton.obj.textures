@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "m_0": "sand_wither_skull"
+      },
+      "name": "default"
+    }
+  }
+}
