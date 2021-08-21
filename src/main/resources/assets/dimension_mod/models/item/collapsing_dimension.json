@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "dimension_mod:items/igniter"
+    "layer0": "dimension_mod:items/francium_and_steel"
   }
 }

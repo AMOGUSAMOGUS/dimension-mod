@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:iron_ingot"
+    "item": "dimension_mod:francium_ingot"
   },
   "addition": {
     "item": "dimension_mod:sandy_scrap"

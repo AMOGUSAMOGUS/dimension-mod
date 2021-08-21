@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "dimension_mod:items/francium_nugget"
+  }
+}

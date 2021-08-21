@@ -13,6 +13,7 @@ import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.dimensionmod.item.BlazeKingsCrownItem;
 import net.mcreator.dimensionmod.entity.BlazeKingEntity;
@@ -73,6 +74,9 @@ public class SummonBlazeKingProcedure extends DimensionModModElements.ModElement
 				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
 						((PlayerEntity) entity).container.func_234641_j_());
 			}
+			if (world.isRemote()) {
+				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(BlazeKingsCrownItem.block, (int) (1)));
+			}
 		} else if (((entity.world.getDimensionKey()) == (World.THE_NETHER))) {
 			if (world instanceof ServerWorld) {
 				Entity entityToSpawn = new BlazeKingEntity.CustomEntity(BlazeKingEntity.entity, (World) world);
@@ -86,6 +90,9 @@ public class SummonBlazeKingProcedure extends DimensionModModElements.ModElement
 				ItemStack _stktoremove = new ItemStack(BlazeKingsCrownItem.block, (int) (1));
 				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
 						((PlayerEntity) entity).container.func_234641_j_());
+			}
+			if (world.isRemote()) {
+				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(BlazeKingsCrownItem.block, (int) (1)));
 			}
 		}
 	}

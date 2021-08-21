@@ -1,0 +1,16 @@
+{
+  "group": "dimension_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dimension_mod:francium_nugget"
+    },
+    {
+      "item": "minecraft:potion"
+    }
+  ],
+  "result": {
+    "item": "dimension_mod:francium_flask_shooter",
+    "count": 1
+  }
+}

@@ -644,6 +644,128 @@
           }
         ]
       }
+    },
+    {
+      "name": "FranciumOre",
+      "type": "block",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "francium_ore"
+    },
+    {
+      "name": "FranciumIngot",
+      "type": "item",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "francium_ingot"
+    },
+    {
+      "name": "FranciumFlask",
+      "type": "gun",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "francium_flask"
+    },
+    {
+      "name": "FranciumNugget",
+      "type": "item",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "francium_nugget"
+    },
+    {
+      "name": "FrankiumNuggetRecipe",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frankium_nugget_recipe"
+    },
+    {
+      "name": "FranciumFlaskRecipe",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "francium_flask_recipe"
+    },
+    {
+      "name": "FranciumFlaskEXPLODE",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "francium_flask_explode",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FranciumFlaskShooter",
+      "type": "item",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "francium_flask_shooter"
+    },
+    {
+      "name": "FranciumFlaskThrow",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "francium_flask_throw",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExplosionResistance",
+      "type": "potion",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "explosion_resistance"
     }
   ],
   "variable_elements": [],
@@ -659,10 +781,8 @@
   ],
   "language_map": {
     "en_us": {
-      "item.dimension_mod.blaze_sling": "Blaze Sling",
+      "item.dimension_mod.francium_nugget": "Francium Nugget",
       "entity.dimension_mod.magma_spider": "Sprider",
-      "item.dimension_mod.sandy_hoe": "Sandy Hoe",
-      "item.dimension_mod.blaze_kings_crown": "Blaze King\u0027s Crown",
       "item.dimension_mod.blue_blaze_chestplate": "Blue Blaze Plated Body",
       "item.dimension_mod.collapsing_dimension": "Collapsing Dimension Portal Igniter",
       "item.dimension_mod.sandy_armor_boots": "Sandy Boots",
@@ -670,33 +790,45 @@
       "entity.dimension_mod.blaze_king": "Blaze King",
       "block.dimension_mod.crying_netherrack": "Crying Netherrack",
       "item.dimension_mod.blue_blaze_boots": "Blue Blaze Plated Boots",
-      "item.dimension_mod.blue_blaze_rod": "Blue Blaze Rod",
       "item.dimension_mod.sandy_armor_leggings": "Sandy Leggings",
       "item.dimension_mod.sandy_shovel": "Sandy Shovel",
-      "item.dimension_mod.obsidian_string": "Obsidian String",
       "block.dimension_mod.blaze_plating_machine": "Blaze Plating Machine",
       "item.dimension_mod.sandy_scrap": "Sandy Scrap",
-      "item.dimension_mod.blaze_plated_sword": "Blaze Plated Sword",
       "block.dimension_mod.collapsing_debris": "Sandy Debris",
       "item.dimension_mod.blaze_king_spawn_egg": "Blaze King Spawn Egg",
       "subtitles.crying-wastes-music": "",
-      "biome.dimension_mod.none": "Collapsing Place",
       "item.dimension_mod.blue_blaze_helmet": "Blue Blaze Plated Helmet",
-      "item.dimension_mod.blaze_plated_axe": "Blaze Plated Axe",
-      "item.dimension_mod.sandy_armor_chestplate": "Sandy Body",
-      "item.dimension_mod.sandy_sword": "Sandy Sword",
-      "item.dimension_mod.blaze_plated_pickaxe": "Blaze Plated Pickaxe",
-      "item.dimension_mod.sandy_pickaxe": "Sandy Pickaxe",
+      "item.minecraft.splash_potion.effect.explosion_resistance": "Splash Explosion Resistance",
+      "effect.explosion_resistance": "Explosion Resistance",
+      "item.dimension_mod.francium_flask_shooter": "Francium Flask",
       "biome.dimension_mod.crying_nether_wastes": "Crying Nether Wastes",
       "item.dimension_mod.sandy_armor_helmet": "Sandy Helmet",
       "item.dimension_mod.sandy_axe": "Sandy Axe",
       "item.dimension_mod.sandy_ingot": "Sandy Ingot",
+      "item.dimension_mod.francium_flask": "Bottomless Francium Flask",
       "item.dimension_mod.blaze_plated_hoe": "Blaze Plated Hoe",
+      "item.dimension_mod.francium_ingot": "Francium Ingot",
       "block.dimension_mod.frozen_sand": "Frozen Sand",
-      "item.dimension_mod.crying_nether": "Flint And dead cat",
       "item.dimension_mod.blaze_plated_shovel": "Blaze Plated Shovel",
       "item.dimension_mod.blue_blaze_leggings": "Blue Blaze Plated Leggings",
-      "item.dimension_mod.magma_spider_spawn_egg": "Sprider Spawn Egg"
+      "item.dimension_mod.magma_spider_spawn_egg": "Sprider Spawn Egg",
+      "item.dimension_mod.blaze_sling": "Blaze Sling",
+      "item.dimension_mod.sandy_hoe": "Sandy Hoe",
+      "item.dimension_mod.blaze_kings_crown": "Blaze King\u0027s Crown",
+      "item.minecraft.tipped_arrow.effect.explosion_resistance": "Arrow of Explosion Resistance",
+      "block.dimension_mod.francium_ore": "Francium Ore",
+      "item.dimension_mod.blue_blaze_rod": "Blue Blaze Rod",
+      "item.dimension_mod.obsidian_string": "Obsidian String",
+      "item.dimension_mod.blaze_plated_sword": "Blaze Plated Sword",
+      "item.minecraft.potion.effect.explosion_resistance": "Explosion Resistance",
+      "biome.dimension_mod.none": "Collapsing Place",
+      "item.dimension_mod.blaze_plated_axe": "Blaze Plated Axe",
+      "item.dimension_mod.sandy_sword": "Sandy Sword",
+      "item.dimension_mod.sandy_armor_chestplate": "Sandy Body",
+      "item.dimension_mod.blaze_plated_pickaxe": "Blaze Plated Pickaxe",
+      "item.dimension_mod.sandy_pickaxe": "Sandy Pickaxe",
+      "item.dimension_mod.crying_nether": "Flint And dead cat",
+      "item.minecraft.lingering_potion.effect.explosion_resistance": "Lingering Explosion Resistance"
     }
   },
   "foldersRoot": {

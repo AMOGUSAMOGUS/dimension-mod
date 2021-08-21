@@ -39,7 +39,7 @@
     "igniterTab": {
       "value": "TOOLS"
     },
-    "texture": "igniter",
+    "texture": "francium_and_steel",
     "portalTexture": "sand",
     "enablePortal": true
   }

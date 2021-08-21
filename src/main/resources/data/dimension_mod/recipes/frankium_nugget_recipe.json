@@ -1,0 +1,13 @@
+{
+  "group": "dimension_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dimension_mod:francium_ingot"
+    }
+  ],
+  "result": {
+    "item": "dimension_mod:francium_nugget",
+    "count": 9
+  }
+}

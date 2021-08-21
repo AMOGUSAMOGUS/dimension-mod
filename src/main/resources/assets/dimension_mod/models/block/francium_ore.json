@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "dimension_mod:blocks/franciumore",
+    "particle": "dimension_mod:blocks/franciumore"
+  }
+}
