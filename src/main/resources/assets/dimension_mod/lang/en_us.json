@@ -16,8 +16,8 @@
   "item.dimension_mod.blaze_king_spawn_egg": "Blaze King Spawn Egg",
   "subtitles.crying-wastes-music": "",
   "item.dimension_mod.blue_blaze_helmet": "Blue Blaze Plated Helmet",
-  "item.minecraft.splash_potion.effect.explosion_resistance": "Splash Explosion Resistance",
-  "effect.explosion_resistance": "Explosion Resistance",
+  "item.minecraft.splash_potion.effect.explosion_resistance": "Splash Death",
+  "effect.explosion_resistance": "Kamakazi",
   "item.dimension_mod.francium_flask_shooter": "Francium Flask",
   "biome.dimension_mod.crying_nether_wastes": "Crying Nether Wastes",
   "item.dimension_mod.sandy_armor_helmet": "Sandy Helmet",
@@ -33,12 +33,12 @@
   "item.dimension_mod.blaze_sling": "Blaze Sling",
   "item.dimension_mod.sandy_hoe": "Sandy Hoe",
   "item.dimension_mod.blaze_kings_crown": "Blaze King\u0027s Crown",
-  "item.minecraft.tipped_arrow.effect.explosion_resistance": "Arrow of Explosion Resistance",
+  "item.minecraft.tipped_arrow.effect.explosion_resistance": "Arrow of Death",
   "block.dimension_mod.francium_ore": "Francium Ore",
   "item.dimension_mod.blue_blaze_rod": "Blue Blaze Rod",
   "item.dimension_mod.obsidian_string": "Obsidian String",
   "item.dimension_mod.blaze_plated_sword": "Blaze Plated Sword",
-  "item.minecraft.potion.effect.explosion_resistance": "Explosion Resistance",
+  "item.minecraft.potion.effect.explosion_resistance": "Death",
   "biome.dimension_mod.none": "Collapsing Place",
   "item.dimension_mod.blaze_plated_axe": "Blaze Plated Axe",
   "item.dimension_mod.scream.desc": "-Flannos",
@@ -48,5 +48,5 @@
   "item.dimension_mod.sandy_pickaxe": "Sandy Pickaxe",
   "item.dimension_mod.scream": "Scream",
   "item.dimension_mod.crying_nether": "Flint And dead cat",
-  "item.minecraft.lingering_potion.effect.explosion_resistance": "Lingering Explosion Resistance"
+  "item.minecraft.lingering_potion.effect.explosion_resistance": "Lingering Death"
 }

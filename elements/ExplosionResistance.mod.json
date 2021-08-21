@@ -2,8 +2,8 @@
   "_fv": 18,
   "_type": "potion",
   "definition": {
-    "name": "Explosion Resistance",
-    "effectName": "Explosion Resistance",
+    "name": "Death",
+    "effectName": "Kamakazi",
     "icon": "bullet.png",
     "color": {
       "value": -39373,
