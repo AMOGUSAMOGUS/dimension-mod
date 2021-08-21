@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "dimension_mod:blocks/cryingnetherrack",
-    "portal": "dimension_mod:blocks/cryingnetherrack"
+    "particle": "dimension_mod:blocks/single_nether_portal",
+    "portal": "dimension_mod:blocks/single_nether_portal"
   },
   "elements": [
     {

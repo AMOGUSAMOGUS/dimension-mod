@@ -41,10 +41,12 @@
   "item.minecraft.potion.effect.explosion_resistance": "Explosion Resistance",
   "biome.dimension_mod.none": "Collapsing Place",
   "item.dimension_mod.blaze_plated_axe": "Blaze Plated Axe",
+  "item.dimension_mod.scream.desc": "-Flannos",
   "item.dimension_mod.sandy_sword": "Sandy Sword",
   "item.dimension_mod.sandy_armor_chestplate": "Sandy Body",
   "item.dimension_mod.blaze_plated_pickaxe": "Blaze Plated Pickaxe",
   "item.dimension_mod.sandy_pickaxe": "Sandy Pickaxe",
+  "item.dimension_mod.scream": "Scream",
   "item.dimension_mod.crying_nether": "Flint And dead cat",
   "item.minecraft.lingering_potion.effect.explosion_resistance": "Lingering Explosion Resistance"
 }

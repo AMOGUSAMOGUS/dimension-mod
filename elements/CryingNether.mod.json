@@ -52,7 +52,7 @@
       "value": "TOOLS"
     },
     "texture": "igniter",
-    "portalTexture": "cryingnetherrack",
+    "portalTexture": "single_nether_portal",
     "enablePortal": true
   }
 }

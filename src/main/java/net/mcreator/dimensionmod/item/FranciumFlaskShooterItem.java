@@ -66,7 +66,6 @@ public class FranciumFlaskShooterItem extends DimensionModModElements.ModElement
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("itemstack", itemstack);
 				FranciumFlaskThrowProcedure.executeProcedure($_dependencies);
 			}
 			return ar;
@@ -86,7 +85,6 @@ public class FranciumFlaskShooterItem extends DimensionModModElements.ModElement
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("itemstack", itemstack);
 				FranciumFlaskThrowProcedure.executeProcedure($_dependencies);
 			}
 			return retval;

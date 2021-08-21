@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "disc",
+    "name": "Scream",
+    "description": "-Flannos",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:crying-wastes-music"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

@@ -29,7 +29,7 @@
       "value": "Blocks.SANDSTONE#0"
     },
     "portalParticles": {
-      "value": "CUSTOM:CryingPortal"
+      "value": "SUSPENDED_DEPTH"
     },
     "portalLuminance": 0,
     "portalSound": {
