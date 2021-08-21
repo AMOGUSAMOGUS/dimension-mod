@@ -1,0 +1,16 @@
+{
+  "group": "dimension_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "dimension_mod:francium_nugget"
+    }
+  ],
+  "result": {
+    "item": "dimension_mod:francium_bread",
+    "count": 1
+  }
+}

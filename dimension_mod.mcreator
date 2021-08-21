@@ -822,6 +822,83 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "explode"
+    },
+    {
+      "name": "FranciumBread",
+      "type": "food",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "francium_bread"
+    },
+    {
+      "name": "NormalBreadEaten",
+      "type": "potion",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "normal_bread_eaten"
+    },
+    {
+      "name": "BreadWaterTest",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bread_water_test",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FranciumBreadEaten",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "francium_bread_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FranciumBreadRecipe",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "francium_bread_recipe"
     }
   ],
   "variable_elements": [],
@@ -839,8 +916,9 @@
     "en_us": {
       "item.dimension_mod.francium_nugget": "Francium Nugget",
       "entity.dimension_mod.magma_spider": "Sprider",
+      "effect.normal_bread_eaten": "Normal Bread Eaten",
       "item.dimension_mod.blue_blaze_chestplate": "Blue Blaze Plated Body",
-      "item.dimension_mod.collapsing_dimension": "Collapsing Dimension Portal Igniter",
+      "item.dimension_mod.collapsing_dimension": "Flint And Francium",
       "item.dimension_mod.sandy_armor_boots": "Sandy Boots",
       "block.dimension_mod.crying_nether_brick": "Crying Nether Brick",
       "entity.dimension_mod.blaze_king": "Blaze King",
@@ -850,7 +928,10 @@
       "item.dimension_mod.sandy_shovel": "Sandy Shovel",
       "block.dimension_mod.blaze_plating_machine": "Blaze Plating Machine",
       "item.dimension_mod.sandy_scrap": "Sandy Scrap",
+      "item.dimension_mod.francium_bread": "Bread",
+      "item.minecraft.potion.effect.normal_bread_eaten": "Normal Bread Eaten",
       "block.dimension_mod.collapsing_debris": "Sandy Debris",
+      "item.minecraft.lingering_potion.effect.normal_bread_eaten": "Lingering Normal Bread Eaten",
       "item.dimension_mod.blaze_king_spawn_egg": "Blaze King Spawn Egg",
       "subtitles.crying-wastes-music": "",
       "item.dimension_mod.blue_blaze_helmet": "Blue Blaze Plated Helmet",
@@ -868,6 +949,7 @@
       "item.dimension_mod.blaze_plated_shovel": "Blaze Plated Shovel",
       "item.dimension_mod.blue_blaze_leggings": "Blue Blaze Plated Leggings",
       "item.dimension_mod.magma_spider_spawn_egg": "Sprider Spawn Egg",
+      "item.minecraft.splash_potion.effect.normal_bread_eaten": "Splash Normal Bread Eaten",
       "item.dimension_mod.blaze_sling": "Blaze Sling",
       "item.dimension_mod.sandy_hoe": "Sandy Hoe",
       "item.dimension_mod.blaze_kings_crown": "Blaze King\u0027s Crown",
@@ -885,7 +967,8 @@
       "item.dimension_mod.blaze_plated_pickaxe": "Blaze Plated Pickaxe",
       "item.dimension_mod.sandy_pickaxe": "Sandy Pickaxe",
       "item.dimension_mod.scream": "Scream",
-      "item.dimension_mod.crying_nether": "Flint And dead cat",
+      "item.dimension_mod.crying_nether": "Flint Sand",
+      "item.minecraft.tipped_arrow.effect.normal_bread_eaten": "Arrow of Normal Bread Eaten",
       "item.minecraft.lingering_potion.effect.explosion_resistance": "Lingering Death"
     }
   },

@@ -110,7 +110,7 @@ public class CollapsingDebrisBlock extends DimensionModModElements.ModElement {
 	}
 	public static class CustomBlock extends FallingBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.ANCIENT_DEBRIS).hardnessAndResistance(35f, 10f).setLightLevel(s -> 0)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.ANCIENT_DEBRIS).hardnessAndResistance(35f, 100f).setLightLevel(s -> 0)
 					.harvestLevel(4).harvestTool(ToolType.PICKAXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
 			setRegistryName("collapsing_debris");
 		}

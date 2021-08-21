@@ -1,0 +1,58 @@
+
+package net.mcreator.dimensionmod.item;
+
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.world.World;
+import net.minecraft.item.UseAction;
+import net.minecraft.item.Rarity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.item.Food;
+import net.minecraft.entity.LivingEntity;
+
+import net.mcreator.dimensionmod.procedures.FranciumBreadEatenProcedure;
+import net.mcreator.dimensionmod.DimensionModModElements;
+
+import java.util.Map;
+import java.util.HashMap;
+
+@DimensionModModElements.ModElement.Tag
+public class FranciumBreadItem extends DimensionModModElements.ModElement {
+	@ObjectHolder("dimension_mod:francium_bread")
+	public static final Item block = null;
+	public FranciumBreadItem(DimensionModModElements instance) {
+		super(instance, 70);
+	}
+
+	@Override
+	public void initElements() {
+		elements.items.add(() -> new FoodItemCustom());
+	}
+	public static class FoodItemCustom extends Item {
+		public FoodItemCustom() {
+			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(64).rarity(Rarity.COMMON)
+					.food((new Food.Builder()).hunger(5).saturation(6f).setAlwaysEdible().build()));
+			setRegistryName("francium_bread");
+		}
+
+		@Override
+		public UseAction getUseAction(ItemStack itemstack) {
+			return UseAction.EAT;
+		}
+
+		@Override
+		public ItemStack onItemUseFinish(ItemStack itemstack, World world, LivingEntity entity) {
+			ItemStack retval = super.onItemUseFinish(itemstack, world, entity);
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				FranciumBreadEatenProcedure.executeProcedure($_dependencies);
+			}
+			return retval;
+		}
+	}
+}

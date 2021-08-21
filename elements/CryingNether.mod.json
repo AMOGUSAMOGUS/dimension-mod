@@ -47,11 +47,11 @@
     "portalSound": {
       "value": "block.portal.ambient"
     },
-    "igniterName": "Flint And dead cat",
+    "igniterName": "Flint Sand",
     "igniterTab": {
       "value": "TOOLS"
     },
-    "texture": "igniter",
+    "texture": "flint_and_sand",
     "portalTexture": "single_nether_portal",
     "enablePortal": true
   }

@@ -29,13 +29,13 @@
       "value": "Blocks.SANDSTONE#0"
     },
     "portalParticles": {
-      "value": "SUSPENDED_DEPTH"
+      "value": "WHITE_ASH"
     },
     "portalLuminance": 0,
     "portalSound": {
       "value": "block.portal.ambient"
     },
-    "igniterName": "Collapsing Dimension Portal Igniter",
+    "igniterName": "Flint And Francium",
     "igniterTab": {
       "value": "TOOLS"
     },
