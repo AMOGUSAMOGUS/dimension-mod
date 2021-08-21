@@ -50,6 +50,7 @@ public class FranciumBreadItem extends DimensionModModElements.ModElement {
 			double z = entity.getPosZ();
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				FranciumBreadEatenProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
