@@ -766,6 +766,18 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "explosion_resistance"
+    },
+    {
+      "name": "ExplodeResist",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "explode_resist",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],

@@ -40,7 +40,7 @@
       "value": "TOOLS"
     },
     "texture": "francium_and_steel",
-    "portalTexture": "sand",
+    "portalTexture": "sandy_portal",
     "enablePortal": true
   }
 }

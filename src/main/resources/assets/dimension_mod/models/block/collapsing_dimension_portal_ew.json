@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "dimension_mod:blocks/sand",
-    "portal": "dimension_mod:blocks/sand"
+    "particle": "dimension_mod:blocks/sandy_portal",
+    "portal": "dimension_mod:blocks/sandy_portal"
   },
   "elements": [
     {
