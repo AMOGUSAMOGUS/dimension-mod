@@ -726,9 +726,9 @@
       }
     },
     {
-      "name": "ExplosionResistancePotionItem",
-      "type": "potion",
-      "sortid": 65,
+      "name": "ExplosionResistance",
+      "type": "potioneffect",
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -833,9 +833,9 @@
       "registry_name": "francium_bread"
     },
     {
-      "name": "NormalBreadEatenPotionItem",
-      "type": "potion",
-      "sortid": 71,
+      "name": "NormalBreadEaten",
+      "type": "potioneffect",
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -910,27 +910,9 @@
       "registry_name": "explosion_resistance"
     },
     {
-      "name": "ExplosionResistance",
-      "type": "potioneffect",
-      "sortid": 73,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "explosion_resistance"
-    },
-    {
       "name": "NormalBreadEatenPotionItem",
       "type": "potion",
       "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "normal_bread_eaten"
-    },
-    {
-      "name": "NormalBreadEaten",
-      "type": "potioneffect",
-      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -960,8 +942,8 @@
       "entity.dimension_mod.blaze_king": "Blaze King",
       "block.dimension_mod.crying_netherrack": "Crying Netherrack",
       "item.dimension_mod.blue_blaze_boots": "Blue Blaze Plated Boots",
-      "item.dimension_mod.sandy_armor_leggings": "Sandy Leggings",
       "item.dimension_mod.sandy_shovel": "Sandy Shovel",
+      "item.dimension_mod.sandy_armor_leggings": "Sandy Leggings",
       "block.dimension_mod.blaze_plating_machine": "Blaze Plating Machine",
       "item.dimension_mod.sandy_scrap": "Sandy Scrap",
       "item.dimension_mod.francium_bread": "Bread",
@@ -1029,5 +1011,5 @@
     "modElementsPackage": "net.mcreator.dimensionmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100235315
+  "mcreatorVersion": 202100118117
 }
