@@ -7,19 +7,13 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.dimensionmod.potion.ExplosionResistancePotion;
-import net.mcreator.dimensionmod.DimensionModModElements;
+import net.mcreator.dimensionmod.potion.ExplosionResistancePotionEffect;
 import net.mcreator.dimensionmod.DimensionModMod;
 
 import java.util.Map;
 import java.util.Collection;
 
-@DimensionModModElements.ModElement.Tag
-public class ExplodeResistProcedure extends DimensionModModElements.ModElement {
-	public ExplodeResistProcedure(DimensionModModElements instance) {
-		super(instance, 66);
-	}
-
+public class ExplodeResistProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -56,7 +50,7 @@ public class ExplodeResistProcedure extends DimensionModModElements.ModElement {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == ExplosionResistancePotion.potion)
+						if (effect.getPotion() == ExplosionResistancePotionEffect.potion)
 							return true;
 					}
 				}

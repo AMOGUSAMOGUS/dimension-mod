@@ -1,10 +1,10 @@
 
 package net.mcreator.dimensionmod.command;
 
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.common.util.FakePlayerFactory;
-import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.entity.Entity;
@@ -12,7 +12,6 @@ import net.minecraft.command.Commands;
 import net.minecraft.command.CommandSource;
 
 import net.mcreator.dimensionmod.procedures.ExplodeCommandExecutedProcedure;
-import net.mcreator.dimensionmod.DimensionModModElements;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -22,24 +21,17 @@ import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.arguments.StringArgumentType;
 
-@DimensionModModElements.ModElement.Tag
-public class ExplodeCommand extends DimensionModModElements.ModElement {
-	public ExplodeCommand(DimensionModModElements instance) {
-		super(instance, 69);
-		MinecraftForge.EVENT_BUS.register(this);
-	}
-
+@Mod.EventBusSubscriber
+public class ExplodeCommand {
 	@SubscribeEvent
-	public void registerCommands(RegisterCommandsEvent event) {
-		event.getDispatcher().register(customCommand());
+	public static void registerCommands(RegisterCommandsEvent event) {
+		event.getDispatcher()
+				.register(LiteralArgumentBuilder.<CommandSource>literal("explode")
+						.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(ExplodeCommand::execute))
+						.executes(ExplodeCommand::execute));
 	}
 
-	private LiteralArgumentBuilder<CommandSource> customCommand() {
-		return LiteralArgumentBuilder.<CommandSource>literal("explode")
-				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(this::execute)).executes(this::execute);
-	}
-
-	private int execute(CommandContext<CommandSource> ctx) {
+	private static int execute(CommandContext<CommandSource> ctx) {
 		ServerWorld world = ctx.getSource().getWorld();
 		double x = ctx.getSource().getPos().getX();
 		double y = ctx.getSource().getPos().getY();

@@ -15,6 +15,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.HoeItem;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.block.BlockState;
 
 import net.mcreator.dimensionmod.procedures.SandWitherSpawnProcedure;
 import net.mcreator.dimensionmod.DimensionModModElements;
@@ -64,6 +65,7 @@ public class BlazePlatedHoeItem extends DimensionModModElements.ModElement {
 				BlockPos pos = context.getPos();
 				PlayerEntity entity = context.getPlayer();
 				Direction direction = context.getFace();
+				BlockState blockstate = world.getBlockState(pos);
 				int x = pos.getX();
 				int y = pos.getY();
 				int z = pos.getZ();

@@ -1,7 +1,7 @@
 
 package net.mcreator.dimensionmod.particle;
 
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
@@ -18,24 +18,17 @@ import net.minecraft.client.particle.IParticleFactory;
 import net.minecraft.client.particle.IAnimatedSprite;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.dimensionmod.DimensionModModElements;
-
-@DimensionModModElements.ModElement.Tag
-public class CryingPortalParticle extends DimensionModModElements.ModElement {
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+public class CryingPortalParticle {
 	public static final BasicParticleType particle = new BasicParticleType(false);
-	public CryingPortalParticle(DimensionModModElements instance) {
-		super(instance, 2);
-		FMLJavaModLoadingContext.get().getModEventBus().register(this);
-	}
-
 	@SubscribeEvent
-	public void registerParticleType(RegistryEvent.Register<ParticleType<?>> event) {
+	public static void registerParticleType(RegistryEvent.Register<ParticleType<?>> event) {
 		event.getRegistry().register(particle.setRegistryName("crying_portal"));
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
-	public void registerParticle(ParticleFactoryRegisterEvent event) {
+	public static void registerParticle(ParticleFactoryRegisterEvent event) {
 		Minecraft.getInstance().particles.registerFactory(particle, CustomParticleFactory::new);
 	}
 	@OnlyIn(Dist.CLIENT)

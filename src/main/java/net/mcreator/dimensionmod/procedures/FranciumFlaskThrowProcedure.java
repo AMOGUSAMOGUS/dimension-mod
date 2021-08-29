@@ -8,18 +8,12 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.dimensionmod.item.FranciumFlaskShooterItem;
 import net.mcreator.dimensionmod.item.FranciumFlaskItem;
-import net.mcreator.dimensionmod.DimensionModModElements;
 import net.mcreator.dimensionmod.DimensionModMod;
 
 import java.util.Random;
 import java.util.Map;
 
-@DimensionModModElements.ModElement.Tag
-public class FranciumFlaskThrowProcedure extends DimensionModModElements.ModElement {
-	public FranciumFlaskThrowProcedure(DimensionModModElements instance) {
-		super(instance, 64);
-	}
-
+public class FranciumFlaskThrowProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -34,7 +28,7 @@ public class FranciumFlaskThrowProcedure extends DimensionModModElements.ModElem
 			}
 		}
 		if (entity instanceof LivingEntity) {
-			ItemStack _setstack = new ItemStack(FranciumFlaskShooterItem.block, (int) (1));
+			ItemStack _setstack = new ItemStack(FranciumFlaskShooterItem.block);
 			_setstack.setCount(
 					(int) (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getCount()) - 1));
 			((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);

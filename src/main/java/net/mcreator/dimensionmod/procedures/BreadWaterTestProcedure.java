@@ -5,17 +5,11 @@ import net.minecraft.world.IWorld;
 import net.minecraft.world.Explosion;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.dimensionmod.DimensionModModElements;
 import net.mcreator.dimensionmod.DimensionModMod;
 
 import java.util.Map;
 
-@DimensionModModElements.ModElement.Tag
-public class BreadWaterTestProcedure extends DimensionModModElements.ModElement {
-	public BreadWaterTestProcedure(DimensionModModElements instance) {
-		super(instance, 71);
-	}
-
+public class BreadWaterTestProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

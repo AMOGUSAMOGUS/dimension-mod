@@ -3,6 +3,8 @@ package net.mcreator.dimensionmod.block;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
@@ -37,6 +39,11 @@ public class CryingNetherrackBlock extends DimensionModModElements.ModElement {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.NETHERRACK).hardnessAndResistance(0.5499999999999999f, 10f)
 					.setLightLevel(s -> 1).slipperiness(0.7f).speedFactor(0.95f));
 			setRegistryName("crying_netherrack");
+		}
+
+		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 15;
 		}
 
 		@Override

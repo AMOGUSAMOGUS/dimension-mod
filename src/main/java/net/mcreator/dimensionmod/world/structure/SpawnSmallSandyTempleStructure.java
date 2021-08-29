@@ -1,11 +1,10 @@
 
 package net.mcreator.dimensionmod.world.structure;
 
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.placement.IPlacementConfig;
@@ -32,22 +31,17 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.dimensionmod.block.FrozenSandBlock;
-import net.mcreator.dimensionmod.DimensionModModElements;
 
 import java.util.Random;
 
-@DimensionModModElements.ModElement.Tag
-public class SpawnSmallSandyTempleStructure extends DimensionModModElements.ModElement {
+@Mod.EventBusSubscriber
+public class SpawnSmallSandyTempleStructure {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
-	public SpawnSmallSandyTempleStructure(DimensionModModElements instance) {
-		super(instance, 27);
-		MinecraftForge.EVENT_BUS.register(this);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
-	}
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
-		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
+		public static void registerFeature(RegistryEvent.Register<Feature<?>> event) {
 			feature = new Feature<NoFeatureConfig>(NoFeatureConfig.field_236558_a_) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random random, BlockPos pos, NoFeatureConfig config) {
@@ -68,11 +62,11 @@ public class SpawnSmallSandyTempleStructure extends DimensionModModElements.ModE
 							j = Math.abs(random.nextInt(Math.max(1, j)) - 24);
 							BlockState blockAt = world.getBlockState(new BlockPos(i, j, k));
 							boolean blockCriteria = false;
-							if (blockAt.getBlock() == Blocks.SANDSTONE.getDefaultState().getBlock())
+							if (blockAt.getBlock() == Blocks.SANDSTONE)
 								blockCriteria = true;
-							if (blockAt.getBlock() == Blocks.SAND.getDefaultState().getBlock())
+							if (blockAt.getBlock() == Blocks.SAND)
 								blockCriteria = true;
-							if (blockAt.getBlock() == FrozenSandBlock.block.getDefaultState().getBlock())
+							if (blockAt.getBlock() == FrozenSandBlock.block)
 								blockCriteria = true;
 							if (!blockCriteria)
 								continue;
@@ -103,7 +97,7 @@ public class SpawnSmallSandyTempleStructure extends DimensionModModElements.ModE
 		}
 	}
 	@SubscribeEvent
-	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+	public static void addFeatureToBiomes(BiomeLoadingEvent event) {
 		event.getGeneration().getFeatures(GenerationStage.Decoration.UNDERGROUND_STRUCTURES).add(() -> configuredFeature);
 	}
 }

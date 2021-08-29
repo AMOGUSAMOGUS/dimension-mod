@@ -2,7 +2,7 @@
 package net.mcreator.dimensionmod.potion;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
@@ -14,22 +14,16 @@ import net.minecraft.potion.Effect;
 import net.minecraft.entity.LivingEntity;
 
 import net.mcreator.dimensionmod.procedures.BreadWaterTestProcedure;
-import net.mcreator.dimensionmod.DimensionModModElements;
 
 import java.util.Map;
 import java.util.HashMap;
 
-@DimensionModModElements.ModElement.Tag
-public class NormalBreadEatenPotion extends DimensionModModElements.ModElement {
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+public class NormalBreadEatenPotionEffect {
 	@ObjectHolder("dimension_mod:normal_bread_eaten")
 	public static final Effect potion = null;
-	public NormalBreadEatenPotion(DimensionModModElements instance) {
-		super(instance, 71);
-		FMLJavaModLoadingContext.get().getModEventBus().register(this);
-	}
-
 	@SubscribeEvent
-	public void registerEffect(RegistryEvent.Register<Effect> event) {
+	public static void registerEffect(RegistryEvent.Register<Effect> event) {
 		event.getRegistry().register(new EffectCustom());
 	}
 	public static class EffectCustom extends Effect {
@@ -78,6 +72,11 @@ public class NormalBreadEatenPotion extends DimensionModModElements.ModElement {
 			double z = entity.getPosZ();
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
 				BreadWaterTestProcedure.executeProcedure($_dependencies);
 			}
 		}

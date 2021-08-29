@@ -3,17 +3,11 @@ package net.mcreator.dimensionmod.procedures;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 
-import net.mcreator.dimensionmod.DimensionModModElements;
 import net.mcreator.dimensionmod.DimensionModMod;
 
 import java.util.Map;
 
-@DimensionModModElements.ModElement.Tag
-public class SpawnSmallSandyTempleAdditionalGenerationConditionProcedure extends DimensionModModElements.ModElement {
-	public SpawnSmallSandyTempleAdditionalGenerationConditionProcedure(DimensionModModElements instance) {
-		super(instance, 30);
-	}
-
+public class SpawnSmallSandyTempleAdditionalGenerationConditionProcedure {
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
