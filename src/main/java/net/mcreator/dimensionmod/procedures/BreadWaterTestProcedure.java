@@ -3,8 +3,10 @@ package net.mcreator.dimensionmod.procedures;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.Explosion;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.dimensionmod.potion.NormalBreadEatenPotionEffect;
 import net.mcreator.dimensionmod.DimensionModMod;
 
 import java.util.Map;
@@ -44,6 +46,9 @@ public class BreadWaterTestProcedure {
 		if ((entity.isInWater())) {
 			if (world instanceof World && !((World) world).isRemote) {
 				((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 7, Explosion.Mode.BREAK);
+			}
+			if (entity instanceof LivingEntity) {
+				((LivingEntity) entity).removePotionEffect(NormalBreadEatenPotionEffect.potion);
 			}
 		}
 	}

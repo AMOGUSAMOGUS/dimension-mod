@@ -4,7 +4,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.dimensionmod.potion.ExplosionResistancePotionEffect;
+import net.mcreator.dimensionmod.potion.NormalBreadEatenPotionEffect;
 import net.mcreator.dimensionmod.DimensionModMod;
 
 import java.util.Map;
@@ -19,6 +19,6 @@ public class FranciumBreadEatenProcedure {
 		Entity entity = (Entity) dependencies.get("entity");
 		DimensionModMod.LOGGER.debug("?????????????????????!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!????????????????????");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(ExplosionResistancePotionEffect.potion, (int) 60, (int) 1));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(NormalBreadEatenPotionEffect.potion, (int) 99999, (int) 1));
 	}
 }
