@@ -121,7 +121,7 @@ public class FranciumFlaskItem extends DimensionModModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(FranciumFlaskItem.block, (int) (1));
+			return new ItemStack(FranciumFlaskItem.block);
 		}
 
 		@Override
@@ -138,6 +138,7 @@ public class FranciumFlaskItem extends DimensionModModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			World world = this.world;
+			Entity imediatesourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
@@ -156,6 +157,7 @@ public class FranciumFlaskItem extends DimensionModModElements.ModElement {
 			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.func_234616_v_();
+			Entity imediatesourceentity = this;
 			if (this.inGround) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();

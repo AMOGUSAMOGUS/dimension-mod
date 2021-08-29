@@ -68,8 +68,8 @@ public class BlazeSlingRenderer {
 			textureWidth = 64;
 			textureHeight = 64;
 			Fireball = new ModelRenderer(this);
-			Fireball.setRotationPoint(0.0F, 18.0F, 5.0F);
-			setRotationAngle(Fireball, 1.5708F, 0.0F, 0.0F);
+			Fireball.setRotationPoint(0.0F, 18.0F, -5.0F);
+			setRotationAngle(Fireball, -1.5708F, 0.0F, 0.0F);
 			Fireball.setTextureOffset(0, 0).addBox(-4.0F, -9.0F, -4.0F, 8.0F, 8.0F, 4.0F, 0.0F, false);
 			Fireball.setTextureOffset(0, 12).addBox(-3.0F, -8.0F, -5.0F, 6.0F, 6.0F, 1.0F, 0.0F, false);
 			Fireball.setTextureOffset(30, 0).addBox(1.0F, -10.0F, 1.0F, 2.0F, 2.0F, 2.0F, 0.0F, false);

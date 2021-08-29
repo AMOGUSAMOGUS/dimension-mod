@@ -44,7 +44,7 @@ public class SandySwordItem extends DimensionModModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(SandyIngotItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(SandyIngotItem.block));
 			}
 		}, 3, -2.4f, new Item.Properties().group(ItemGroup.COMBAT)) {
 		}.setRegistryName("sandy_sword"));

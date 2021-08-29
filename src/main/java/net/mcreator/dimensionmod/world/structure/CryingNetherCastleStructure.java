@@ -1,11 +1,10 @@
 
 package net.mcreator.dimensionmod.world.structure;
 
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.placement.IPlacementConfig;
@@ -32,22 +31,17 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.dimensionmod.block.CryingNetherrackBlock;
-import net.mcreator.dimensionmod.DimensionModModElements;
 
 import java.util.Random;
 
-@DimensionModModElements.ModElement.Tag
-public class CryingNetherCastleStructure extends DimensionModModElements.ModElement {
+@Mod.EventBusSubscriber
+public class CryingNetherCastleStructure {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
-	public CryingNetherCastleStructure(DimensionModModElements instance) {
-		super(instance, 29);
-		MinecraftForge.EVENT_BUS.register(this);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
-	}
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
-		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
+		public static void registerFeature(RegistryEvent.Register<Feature<?>> event) {
 			feature = new Feature<NoFeatureConfig>(NoFeatureConfig.field_236558_a_) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random random, BlockPos pos, NoFeatureConfig config) {
@@ -68,13 +62,13 @@ public class CryingNetherCastleStructure extends DimensionModModElements.ModElem
 							j = Math.abs(random.nextInt(Math.max(1, j)) - 24);
 							BlockState blockAt = world.getBlockState(new BlockPos(i, j, k));
 							boolean blockCriteria = false;
-							if (blockAt.getBlock() == CryingNetherrackBlock.block.getDefaultState().getBlock())
+							if (blockAt.getBlock() == CryingNetherrackBlock.block)
 								blockCriteria = true;
-							if (blockAt.getBlock() == Blocks.NETHERRACK.getDefaultState().getBlock())
+							if (blockAt.getBlock() == Blocks.NETHERRACK)
 								blockCriteria = true;
-							if (blockAt.getBlock() == Blocks.WARPED_NYLIUM.getDefaultState().getBlock())
+							if (blockAt.getBlock() == Blocks.WARPED_NYLIUM)
 								blockCriteria = true;
-							if (blockAt.getBlock() == Blocks.CRIMSON_NYLIUM.getDefaultState().getBlock())
+							if (blockAt.getBlock() == Blocks.CRIMSON_NYLIUM)
 								blockCriteria = true;
 							if (!blockCriteria)
 								continue;
@@ -104,7 +98,7 @@ public class CryingNetherCastleStructure extends DimensionModModElements.ModElem
 		}
 	}
 	@SubscribeEvent
-	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+	public static void addFeatureToBiomes(BiomeLoadingEvent event) {
 		event.getGeneration().getFeatures(GenerationStage.Decoration.UNDERGROUND_STRUCTURES).add(() -> configuredFeature);
 	}
 }

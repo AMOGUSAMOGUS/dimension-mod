@@ -44,7 +44,7 @@ public class SandyPickaxeItem extends DimensionModModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(SandyIngotItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(SandyIngotItem.block));
 			}
 		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
 		}.setRegistryName("sandy_pickaxe"));

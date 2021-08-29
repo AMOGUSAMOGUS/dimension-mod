@@ -58,7 +58,7 @@ public class SandyArmorItem extends DimensionModModElements.ModElement {
 
 			@Override
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(SandyIngotItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(SandyIngotItem.block));
 			}
 
 			@OnlyIn(Dist.CLIENT)

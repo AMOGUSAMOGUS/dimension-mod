@@ -17,17 +17,11 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.dimensionmod.item.BlazeKingsCrownItem;
 import net.mcreator.dimensionmod.entity.BlazeKingEntity;
-import net.mcreator.dimensionmod.DimensionModModElements;
 import net.mcreator.dimensionmod.DimensionModMod;
 
 import java.util.Map;
 
-@DimensionModModElements.ModElement.Tag
-public class SummonBlazeKingProcedure extends DimensionModModElements.ModElement {
-	public SummonBlazeKingProcedure(DimensionModModElements instance) {
-		super(instance, 44);
-	}
-
+public class SummonBlazeKingProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -70,12 +64,12 @@ public class SummonBlazeKingProcedure extends DimensionModModElements.ModElement
 				world.addEntity(entityToSpawn);
 			}
 			if (entity instanceof PlayerEntity) {
-				ItemStack _stktoremove = new ItemStack(BlazeKingsCrownItem.block, (int) (1));
+				ItemStack _stktoremove = new ItemStack(BlazeKingsCrownItem.block);
 				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
 						((PlayerEntity) entity).container.func_234641_j_());
 			}
 			if (world.isRemote()) {
-				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(BlazeKingsCrownItem.block, (int) (1)));
+				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(BlazeKingsCrownItem.block));
 			}
 		} else if (((entity.world.getDimensionKey()) == (World.THE_NETHER))) {
 			if (world instanceof ServerWorld) {
@@ -87,12 +81,12 @@ public class SummonBlazeKingProcedure extends DimensionModModElements.ModElement
 				world.addEntity(entityToSpawn);
 			}
 			if (entity instanceof PlayerEntity) {
-				ItemStack _stktoremove = new ItemStack(BlazeKingsCrownItem.block, (int) (1));
+				ItemStack _stktoremove = new ItemStack(BlazeKingsCrownItem.block);
 				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
 						((PlayerEntity) entity).container.func_234641_j_());
 			}
 			if (world.isRemote()) {
-				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(BlazeKingsCrownItem.block, (int) (1)));
+				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(BlazeKingsCrownItem.block));
 			}
 		}
 	}

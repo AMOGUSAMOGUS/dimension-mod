@@ -4,17 +4,11 @@ import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.Explosion;
 
-import net.mcreator.dimensionmod.DimensionModModElements;
 import net.mcreator.dimensionmod.DimensionModMod;
 
 import java.util.Map;
 
-@DimensionModModElements.ModElement.Tag
-public class ExplodeCommandExecutedProcedure extends DimensionModModElements.ModElement {
-	public ExplodeCommandExecutedProcedure(DimensionModModElements instance) {
-		super(instance, 69);
-	}
-
+public class ExplodeCommandExecutedProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))

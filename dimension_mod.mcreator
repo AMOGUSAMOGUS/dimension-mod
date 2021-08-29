@@ -292,7 +292,7 @@
       "ids": {},
       "registry_name": "spawn_small_sandy_temple_additional_generation_condition",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "x",
@@ -362,7 +362,7 @@
     },
     {
       "name": "BlazeKing",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 34,
       "compiles": true,
       "locked_code": false,
@@ -400,7 +400,7 @@
     },
     {
       "name": "MagmaSpider",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
@@ -418,7 +418,7 @@
     },
     {
       "name": "BlazeSling",
-      "type": "gun",
+      "type": "rangeditem",
       "sortid": 38,
       "compiles": true,
       "locked_code": false,
@@ -636,7 +636,7 @@
     },
     {
       "name": "FranciumFlask",
-      "type": "gun",
+      "type": "rangeditem",
       "sortid": 58,
       "compiles": true,
       "locked_code": false,
@@ -726,7 +726,7 @@
       }
     },
     {
-      "name": "ExplosionResistance",
+      "name": "ExplosionResistancePotionItem",
       "type": "potion",
       "sortid": 65,
       "compiles": true,
@@ -833,7 +833,7 @@
       "registry_name": "francium_bread"
     },
     {
-      "name": "NormalBreadEaten",
+      "name": "NormalBreadEatenPotionItem",
       "type": "potion",
       "sortid": 71,
       "compiles": true,
@@ -899,6 +899,42 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "francium_bread_recipe"
+    },
+    {
+      "name": "ExplosionResistancePotionItem",
+      "type": "potion",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "explosion_resistance"
+    },
+    {
+      "name": "ExplosionResistance",
+      "type": "potioneffect",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "explosion_resistance"
+    },
+    {
+      "name": "NormalBreadEatenPotionItem",
+      "type": "potion",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "normal_bread_eaten"
+    },
+    {
+      "name": "NormalBreadEaten",
+      "type": "potioneffect",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "normal_bread_eaten"
     }
   ],
   "variable_elements": [],
@@ -993,5 +1029,5 @@
     "modElementsPackage": "net.mcreator.dimensionmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100118117
+  "mcreatorVersion": 202100235315
 }

@@ -122,7 +122,7 @@ public class MagmaSpiderEntity extends DimensionModModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(ObsidianStringItem.block, (int) (1)));
+			this.entityDropItem(new ItemStack(ObsidianStringItem.block));
 		}
 
 		@Override

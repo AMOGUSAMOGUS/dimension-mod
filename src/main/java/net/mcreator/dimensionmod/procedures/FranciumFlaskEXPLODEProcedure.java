@@ -4,17 +4,11 @@ import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.Explosion;
 
-import net.mcreator.dimensionmod.DimensionModModElements;
 import net.mcreator.dimensionmod.DimensionModMod;
 
 import java.util.Map;
 
-@DimensionModModElements.ModElement.Tag
-public class FranciumFlaskEXPLODEProcedure extends DimensionModModElements.ModElement {
-	public FranciumFlaskEXPLODEProcedure(DimensionModModElements instance) {
-		super(instance, 62);
-	}
-
+public class FranciumFlaskEXPLODEProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))

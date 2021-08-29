@@ -27,18 +27,12 @@ import net.mcreator.dimensionmod.item.BlazePlatedShovelItem;
 import net.mcreator.dimensionmod.item.BlazePlatedPickaxeItem;
 import net.mcreator.dimensionmod.item.BlazePlatedHoeItem;
 import net.mcreator.dimensionmod.item.BlazePlatedAxeItem;
-import net.mcreator.dimensionmod.DimensionModModElements;
 import net.mcreator.dimensionmod.DimensionModMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
 
-@DimensionModModElements.ModElement.Tag
-public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.ModElement {
-	public ChilledBlastPlaterUsedProcedure(DimensionModModElements instance) {
-		super(instance, 53);
-	}
-
+public class ChilledBlastPlaterUsedProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -84,7 +78,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(SandyArmorItem.helmet, (int) (1)).getItem()) && (((new Object() {
+		}.getItemStack((int) (0))).getItem() == SandyArmorItem.helmet) && (((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -98,7 +92,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(BlueBlazeRodItem.block, (int) (1)).getItem()) && ((new Object() {
+		}.getItemStack((int) (1))).getItem() == BlueBlazeRodItem.block) && ((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -112,7 +106,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (2))).getItem() == new ItemStack(Items.SNOWBALL, (int) (1)).getItem())))) {
+		}.getItemStack((int) (2))).getItem() == Items.SNOWBALL)))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (_ent != null) {
@@ -160,7 +154,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(BlueBlazeItem.helmet, (int) (1));
+						ItemStack _setstack = new ItemStack(BlueBlazeItem.helmet);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
 						_current.detectAndSendChanges();
@@ -181,7 +175,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(SandyArmorItem.body, (int) (1)).getItem()) && (((new Object() {
+		}.getItemStack((int) (0))).getItem() == SandyArmorItem.body) && (((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -195,7 +189,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(BlueBlazeRodItem.block, (int) (1)).getItem()) && ((new Object() {
+		}.getItemStack((int) (1))).getItem() == BlueBlazeRodItem.block) && ((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -209,7 +203,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (2))).getItem() == new ItemStack(Items.SNOWBALL, (int) (1)).getItem())))) {
+		}.getItemStack((int) (2))).getItem() == Items.SNOWBALL)))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (_ent != null) {
@@ -257,7 +251,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(BlueBlazeItem.body, (int) (1));
+						ItemStack _setstack = new ItemStack(BlueBlazeItem.body);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
 						_current.detectAndSendChanges();
@@ -278,7 +272,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(SandyArmorItem.legs, (int) (1)).getItem()) && (((new Object() {
+		}.getItemStack((int) (0))).getItem() == SandyArmorItem.legs) && (((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -292,7 +286,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(BlueBlazeRodItem.block, (int) (1)).getItem()) && ((new Object() {
+		}.getItemStack((int) (1))).getItem() == BlueBlazeRodItem.block) && ((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -306,7 +300,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (2))).getItem() == new ItemStack(Items.SNOWBALL, (int) (1)).getItem())))) {
+		}.getItemStack((int) (2))).getItem() == Items.SNOWBALL)))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (_ent != null) {
@@ -354,7 +348,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(BlueBlazeItem.legs, (int) (1));
+						ItemStack _setstack = new ItemStack(BlueBlazeItem.legs);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
 						_current.detectAndSendChanges();
@@ -375,7 +369,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(SandyArmorItem.boots, (int) (1)).getItem()) && (((new Object() {
+		}.getItemStack((int) (0))).getItem() == SandyArmorItem.boots) && (((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -389,7 +383,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(BlueBlazeRodItem.block, (int) (1)).getItem()) && ((new Object() {
+		}.getItemStack((int) (1))).getItem() == BlueBlazeRodItem.block) && ((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -403,7 +397,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (2))).getItem() == new ItemStack(Items.SNOWBALL, (int) (1)).getItem())))) {
+		}.getItemStack((int) (2))).getItem() == Items.SNOWBALL)))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (_ent != null) {
@@ -451,7 +445,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(BlueBlazeItem.boots, (int) (1));
+						ItemStack _setstack = new ItemStack(BlueBlazeItem.boots);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
 						_current.detectAndSendChanges();
@@ -472,7 +466,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(SandySwordItem.block, (int) (1)).getItem()) && (((new Object() {
+		}.getItemStack((int) (0))).getItem() == SandySwordItem.block) && (((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -486,7 +480,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(BlueBlazeRodItem.block, (int) (1)).getItem()) && ((new Object() {
+		}.getItemStack((int) (1))).getItem() == BlueBlazeRodItem.block) && ((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -500,7 +494,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (2))).getItem() == new ItemStack(Items.SNOWBALL, (int) (1)).getItem())))) {
+		}.getItemStack((int) (2))).getItem() == Items.SNOWBALL)))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (_ent != null) {
@@ -548,7 +542,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(BlazePlatedSwordItem.block, (int) (1));
+						ItemStack _setstack = new ItemStack(BlazePlatedSwordItem.block);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
 						_current.detectAndSendChanges();
@@ -569,7 +563,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(SandyAxeItem.block, (int) (1)).getItem()) && (((new Object() {
+		}.getItemStack((int) (0))).getItem() == SandyAxeItem.block) && (((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -583,7 +577,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(BlueBlazeRodItem.block, (int) (1)).getItem()) && ((new Object() {
+		}.getItemStack((int) (1))).getItem() == BlueBlazeRodItem.block) && ((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -597,7 +591,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (2))).getItem() == new ItemStack(Items.SNOWBALL, (int) (1)).getItem())))) {
+		}.getItemStack((int) (2))).getItem() == Items.SNOWBALL)))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (_ent != null) {
@@ -645,7 +639,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(BlazePlatedAxeItem.block, (int) (1));
+						ItemStack _setstack = new ItemStack(BlazePlatedAxeItem.block);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
 						_current.detectAndSendChanges();
@@ -666,7 +660,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(SandyPickaxeItem.block, (int) (1)).getItem()) && (((new Object() {
+		}.getItemStack((int) (0))).getItem() == SandyPickaxeItem.block) && (((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -680,7 +674,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(BlueBlazeRodItem.block, (int) (1)).getItem()) && ((new Object() {
+		}.getItemStack((int) (1))).getItem() == BlueBlazeRodItem.block) && ((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -694,7 +688,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (2))).getItem() == new ItemStack(Items.SNOWBALL, (int) (1)).getItem())))) {
+		}.getItemStack((int) (2))).getItem() == Items.SNOWBALL)))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (_ent != null) {
@@ -742,7 +736,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(BlazePlatedPickaxeItem.block, (int) (1));
+						ItemStack _setstack = new ItemStack(BlazePlatedPickaxeItem.block);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
 						_current.detectAndSendChanges();
@@ -763,7 +757,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(SandyShovelItem.block, (int) (1)).getItem()) && (((new Object() {
+		}.getItemStack((int) (0))).getItem() == SandyShovelItem.block) && (((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -777,7 +771,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(BlueBlazeRodItem.block, (int) (1)).getItem()) && ((new Object() {
+		}.getItemStack((int) (1))).getItem() == BlueBlazeRodItem.block) && ((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -791,7 +785,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (2))).getItem() == new ItemStack(Items.SNOWBALL, (int) (1)).getItem())))) {
+		}.getItemStack((int) (2))).getItem() == Items.SNOWBALL)))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (_ent != null) {
@@ -839,7 +833,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(BlazePlatedShovelItem.block, (int) (1));
+						ItemStack _setstack = new ItemStack(BlazePlatedShovelItem.block);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
 						_current.detectAndSendChanges();
@@ -860,7 +854,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(SandyHoeItem.block, (int) (1)).getItem()) && (((new Object() {
+		}.getItemStack((int) (0))).getItem() == SandyHoeItem.block) && (((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -874,7 +868,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(BlueBlazeRodItem.block, (int) (1)).getItem()) && ((new Object() {
+		}.getItemStack((int) (1))).getItem() == BlueBlazeRodItem.block) && ((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -888,7 +882,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (2))).getItem() == new ItemStack(Items.SNOWBALL, (int) (1)).getItem())))) {
+		}.getItemStack((int) (2))).getItem() == Items.SNOWBALL)))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (_ent != null) {
@@ -936,7 +930,7 @@ public class ChilledBlastPlaterUsedProcedure extends DimensionModModElements.Mod
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(BlazePlatedHoeItem.block, (int) (1));
+						ItemStack _setstack = new ItemStack(BlazePlatedHoeItem.block);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
 						_current.detectAndSendChanges();

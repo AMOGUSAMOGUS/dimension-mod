@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Normal Bread Eaten",
+    "splashName": "Splash Normal Bread Eaten",
+    "lingeringName": "Lingering Normal Bread Eaten",
+    "arrowName": "Arrow of Normal Bread Eaten",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:NormalBreadEaten"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}
