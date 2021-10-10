@@ -726,9 +726,9 @@
       }
     },
     {
-      "name": "ExplosionResistancePotionItem",
-      "type": "potion",
-      "sortid": 65,
+      "name": "ExplosionResistance",
+      "type": "potioneffect",
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -833,9 +833,9 @@
       "registry_name": "francium_bread"
     },
     {
-      "name": "NormalBreadEatenPotionItem",
-      "type": "potion",
-      "sortid": 71,
+      "name": "NormalBreadEaten",
+      "type": "potioneffect",
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -901,18 +901,18 @@
       "registry_name": "francium_bread_recipe"
     },
     {
-      "name": "ExplosionResistance",
-      "type": "potioneffect",
-      "sortid": 73,
+      "name": "ExplosionResistancePotionItem",
+      "type": "potion",
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "explosion_resistance"
     },
     {
-      "name": "NormalBreadEaten",
-      "type": "potioneffect",
-      "sortid": 74,
+      "name": "NormalBreadEatenPotionItem",
+      "type": "potion",
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1011,5 +1011,5 @@
     "modElementsPackage": "net.mcreator.dimensionmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100235315
+  "mcreatorVersion": 202100118117
 }

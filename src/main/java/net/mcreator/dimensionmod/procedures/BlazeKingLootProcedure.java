@@ -8,7 +8,6 @@ import net.minecraft.entity.item.ItemEntity;
 import net.mcreator.dimensionmod.item.BlueBlazeRodItem;
 import net.mcreator.dimensionmod.DimensionModMod;
 
-import java.util.Random;
 import java.util.Map;
 
 public class BlazeKingLootProcedure {
@@ -37,7 +36,7 @@ public class BlazeKingLootProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		for (int index0 = 0; index0 < (int) ((((new Random()).nextInt((int) 3 + 1)) + 2)); index0++) {
+		for (int index0 = 0; index0 < (int) ((+2)); index0++) {
 			if (world instanceof World && !world.isRemote()) {
 				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BlueBlazeRodItem.block));
 				entityToSpawn.setPickupDelay((int) 10);

@@ -1,26 +1,21 @@
 
 package net.mcreator.dimensionmod.potion;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
-
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.potion.EffectType;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effect;
-
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ExplosionResistancePotionEffect {
+
 	@ObjectHolder("dimension_mod:explosion_resistance")
 	public static final Effect potion = null;
+
 	@SubscribeEvent
 	public static void registerEffect(RegistryEvent.Register<Effect> event) {
 		event.getRegistry().register(new EffectCustom());
 	}
+
 	public static class EffectCustom extends Effect {
+
 		private final ResourceLocation potionIcon;
+
 		public EffectCustom() {
 			super(EffectType.BENEFICIAL, -39373);
 			setRegistryName("explosion_resistance");
@@ -61,5 +56,7 @@ public class ExplosionResistancePotionEffect {
 		public boolean isReady(int duration, int amplifier) {
 			return true;
 		}
+
 	}
+
 }
